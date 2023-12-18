@@ -35,7 +35,7 @@ def load_triggered_descrip(propertyname,confPath):
 
 
 def load_configuration_file(path):
-    confPath = r"/usr/local/LogConfigLocalizer-submission/localizer/resources/property_corpus_numeric_only_with_des.csv"
+    confPath = r"resources/property_corpus_numeric_only_with_des.csv"
 
     tree = etree.parse(path)
     root = tree.getroot()
@@ -172,7 +172,8 @@ def direct_inference(anomaly_path,xml):
 
 def ask_GPT4(prompt,filename): 
     system_intel = "you are an expert in the filed of logs and software systems. When offered log and the configuration settings, please point out the anomaly of the logs and localize the most likely root-cause configuration properties. The offered information will be as follows: Configuration:name:<> value:<> des:<> Log:<>. The value and des could be <missing>, meaning that no value is set for the property. Please output the information in the following format: \"name:<>'\nvalue:<>'\nrelevant log:<index>-<>'\nexplanation:<>' \" for each suspected configuration property. The <index> indicates the line number. Splitting the logs within the same index is not allowed. The given logs may contain stack statements, please take them as reference. Please obey the rules:1. If some of the offered configuration properties seem to be irrelevant, please don't output them. 2. Don't output the same configuration property more than twice. At most 3 suspected properties while at least one required. 3. Please obey the aforementioned format, no other words should be output. "
-
+    ####################################### FILL IN THE API KEY #######################################
+    api_key=""
     
     result = openai.ChatCompletion.create(model="gpt-4", 
                                  messages=[{"role": "system", "content": system_intel},
@@ -286,7 +287,8 @@ def indirect_inference(anomaly_path,xml_content):
 
 def ask_GPT4_ifSkip(prompt):
     system_intel = "you are an expert in the filed of logs and software systems. You receive information in the following format: \"<log content> root-cause configuration option: name:xxxx value:xxxx desc:xxxx\n \". Please output a probability value of the given configuration option on how likely it can trigger the offered log message. The standard are as follows: 1. The semanatic correlationship between them are strong and direct, output more than 90. 2. For others, output 30. Please output a single value in the following format:\"Probability is x.\""
-
+    ####################################### FILL IN THE API KEY #######################################
+    api_key = ""
         
     result = openai.ChatCompletion.create(model="gpt-4", 
                                  messages=[{"role": "system", "content": system_intel},
