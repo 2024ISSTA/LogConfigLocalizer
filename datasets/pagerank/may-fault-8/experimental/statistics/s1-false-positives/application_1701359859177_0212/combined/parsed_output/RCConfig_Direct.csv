@@ -1,0 +1,6 @@
+name,value,relevant log,explanation
+mapreduce.job.split.metainfo.maxsize,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0213_r_000008,value-hit
+file.replication,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0213_r_000008,value-hit
+yarn.app.mapreduce.am.resource.cpu-vcores,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0213_r_000008,value-hit
+dfs.namenode.edits.dir.minimum,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0213_r_000008,value-hit
+mapreduce.job.maxtaskfailures.per.tracker,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0213_r_000008,value-hit

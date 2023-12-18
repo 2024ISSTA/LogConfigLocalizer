@@ -1,0 +1,13 @@
+,name,value,description
+0,hadoop.security.authentication,kerberos,
+1,dfs.qjournal.accept-recovery.timeout.ms,120000,"Quorum timeout in milliseconds during accept phase of
+    recovery/synchronization for a specific segment."
+2,yarn.log-aggregation.debug.filesize,104857600,
+3,yarn.app.mapreduce.am.job.committer.cancel-timeout,60000,"The amount of time in milliseconds to wait for the output
+    committer to cancel an operation if the job is killed"
+4,yarn.timeline-service.entity-group-fs-store.app-cache-size,10,
+5,yarn.nodemanager.container-log-monitor.interval-ms,60000,
+6,yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size,10000,
+7,yarn.sharedcache.nm.uploader.thread-count,20,
+8,mapreduce.job.local-fs.single-disk-limit.check.interval-ms,5000,Interval of disk limit check to run in ms.
+9,dfs.datanode.slowpeer.low.threshold.ms,5,Threshold in milliseconds below which a DataNode is definitely not slow.

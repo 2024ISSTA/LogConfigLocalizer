@@ -1,0 +1,21 @@
+name,value,relevant log,explanation
+mapred.jobtracker.completeuserjobs.maximum,0,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+        ",property-item-hit	mapred
+dfs.client.slow.io.warning.threshold.ms,30000,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+        ",property-item-hit	io
+mapred.jobtracker.completeuserjobs.maximum,0,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 17 on 57426, call getTaskDiagnostics(attempt_200902061402_3468_m_000625_0) from <host:port>: error: java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+        ",value-hit
+dfs.client.slow.io.warning.threshold.ms,30000,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 17 on 57426, call getTaskDiagnostics(attempt_200902061402_3468_m_000625_0) from <host:port>: error: java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+        ",property-item-hit	io
+dfs.namenode.file.close.num-committed-allowed,0,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 17 on 57426, call getTaskDiagnostics(attempt_200902061402_3468_m_000625_0) from <host:port>: error: java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+        ",value-hit
+yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb,0,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 17 on 57426, call getTaskDiagnostics(attempt_200902061402_3468_m_000625_0) from <host:port>: error: java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+        ",value-hit

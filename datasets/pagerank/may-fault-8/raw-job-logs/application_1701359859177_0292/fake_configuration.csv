@@ -1,0 +1,25 @@
+,name,value,description
+0,ipc.client.idlethreshold,,"Defines the threshold number of connections after which
+               connections will be inspected for idleness."
+1,io.bytes.per.checksum,512,"The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size."
+2,yarn.timeline-service.entity-group-fs-store.scan-interval-seconds,60,
+3,ftp.blocksize,67108864,Block size
+4,yarn.app.mapreduce.client.job.max-retries,3,"The number of retries the client will make for getJob and
+    dependent calls.
+    This is needed for non-HDFS DFS where additional, high level
+    retries are required to avoid spurious failures during the getJob call.
+    30 is a good value for WASB"
+5,dfs.namenode.fs-limits.min-block-size,1048576,"Minimum block size in bytes, enforced by the Namenode at create
+      time. This prevents the accidental creation of files with tiny block
+      sizes (and thus many blocks), which can degrade performance. Support multiple
+      size unit suffix(case insensitive), as described in dfs.blocksize."
+6,dfs.datanode.ec.reconstruction.threads,8,"Number of threads used by the Datanode for background
+    reconstruction work."
+7,dfs.balancer.movedWinWidth,5400000,"Window of time in ms for the HDFS balancer tracking blocks and its
+    locations."
+8,dfs.datanode.handler.count,10,The number of server threads for the datanode.
+9,dfs.datanode.data.transfer.bandwidthPerSec,0,"Specifies the maximum amount of bandwidth that the data transfering can utilize for transfering block when
+      BlockConstructionStage is
+      PIPELINE_SETUP_CREATE and clientName is empty.
+      When the bandwidth value is zero, there is no limit."

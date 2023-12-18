@@ -1,0 +1,14 @@
+name:yarn.app.mapreduce.client-am.ipc.max-retries
+value:1466255778
+relevant log:2-1-WARN	AsyncDispatcher thread interruptedjava.lang.InterruptedException
+explanation:The log indicates an issue with the AsyncDispatcher thread being interrupted. This could be due to the high number of client retries to the Application Master (AM) before reconnecting to the Resource Manager (RM) to fetch Application Status. 
+
+name:dfs.datanode.network.counts.cache.max.size
+value:2147483647
+relevant log:2-1-WARN	AsyncDispatcher thread interruptedjava.lang.InterruptedException
+explanation:The log shows an InterruptedException which could be related to the maximum number of entries the datanode per-host network error count cache may contain. If the cache is full, it could cause interruptions in the AsyncDispatcher thread.
+
+name:ipc.[port_number].weighted-cost.lockshared
+value:10
+relevant log:2-1-WARN	AsyncDispatcher thread interruptedjava.lang.InterruptedException
+explanation:The log indicates an issue with the AsyncDispatcher thread being interrupted. This could be due to the weight multiplier applied to the time spent in the processing phase which holds a shared (read) lock. If the weight is too high, it could cause interruptions in the AsyncDispatcher thread.

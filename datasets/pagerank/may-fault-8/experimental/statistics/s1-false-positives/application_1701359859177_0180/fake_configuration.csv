@@ -1,0 +1,22 @@
+,name,value,description
+0,dfs.qjournal.http.open.timeout.ms,0,"Timeout in milliseconds when open a new HTTP connection to remote
+    journals."
+1,yarn.nodemanager.localizer.cache.target-size-mb,10240,
+2,dfs.namenode.available-space-block-placement-policy.balanced-space-tolerance,5,"Only used when the dfs.block.replicator.classname is set to
+      org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceBlockPlacementPolicy.
+      Special value between 0 and 20, inclusive. if the value is set beyond the scope,
+      this value will be set as 5 by default, Increases tolerance of
+      placing blocks on Datanodes with similar disk space used."
+3,yarn.resourcemanager.activities-manager.cleanup-interval-ms,5000,
+4,mapreduce.shuffle.connection-keep-alive.timeout,5,"The number of seconds a shuffle client attempts to retain
+   http connection. Refer ""Keep-Alive: timeout="" header in
+   Http specification"
+5,dfs.namenode.heartbeat.recheck-interval,300000,"This time decides the interval to check for expired datanodes.
+    With this value and dfs.heartbeat.interval, the interval of
+    deciding the datanode is stale or not is also calculated.
+    The unit of this configuration is millisecond."
+6,yarn.timeline-service.writer.flush-interval-seconds,60,
+7,dfs.namenode.edit.log.autoroll.check.interval.ms,300000,"How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds."
+8,yarn.resourcemanager.delegation-token.max-conf-size-bytes,12800,
+9,fs.s3a.attempts.maximum,20,How many times we should retry commands on transient errors.

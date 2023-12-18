@@ -1,0 +1,4 @@
+anomaly_degree,content
+0.4,"INFO	Diagnostics report from attempt_1701142038763_0611_m_000007_0: [2023-11-29 02:49:00.678]Exception from container-launch.Container id: container_1701142038763_0611_01_000009
+Exit code: 1"
+0.2,INFO	1 failures on node 2f08f873c798

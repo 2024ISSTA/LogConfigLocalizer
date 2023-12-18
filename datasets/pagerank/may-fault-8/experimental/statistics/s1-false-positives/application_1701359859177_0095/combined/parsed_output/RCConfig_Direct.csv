@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+dfs.edit.log.transfer.bandwidthPerSec,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008,value-hit
+ipc.server.max.connections,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008,value-hit
+yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008,value-hit
+yarn.app.mapreduce.am.job.task.listener.thread-count,30,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008,property-item-hit	task

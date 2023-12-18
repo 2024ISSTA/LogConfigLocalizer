@@ -1,0 +1,13 @@
+,name,value,description
+0,dfs.datanode.ec.reconstruction.threads,JeYV6,"Number of threads used by the Datanode for background
+    reconstruction work."
+1,yarn.timeline-service.entity-group-fs-store.app-cache-size,10,
+2,yarn.timeline-service.entity-group-fs-store.cleaner-interval-seconds,3600,
+3,dfs.client.deadnode.detection.idle.sleep.ms,10000,The sleep time of DeadNodeDetector per iteration.
+4,dfs.qjournal.queued-edits.limit.mb,10,Queue size in MB for quorum journal edits.
+5,yarn.resourcemanager.zk-delegation-token-node.split-index,0,
+6,yarn.resourcemanager.delegation-token-renewer.thread-retry-max-attempts,10,
+7,mapreduce.job.max.split.locations,15,"The max number of block locations to store for each split for
+    locality calculation."
+8,yarn.nodemanager.resource.percentage-physical-cpu-limit,100,
+9,yarn.nodemanager.localizer.client.thread-count,5,

@@ -1,0 +1,22 @@
+,name,value,description
+0,yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs,-0.52532107,<missing>
+1,dfs.block.access.key.update.interval,600,Interval in minutes at which namenode updates its access keys.
+2,dfs.image.parallel.threads,4,"The number of threads to use when dfs.image.parallel.load is
+        enabled. This setting should be less than
+        dfs.image.parallel.target.sections. The optimal number of
+        threads will depend on the hardware and environment."
+3,dfs.balancer.service.retries.on.exception,5,"When the balancer is executed as a long-running service, it will retry upon encountering an exception. This
+    configuration determines how many times it will retry before considering the exception to be fatal and quitting."
+4,ha.failover-controller.new-active.rpc-timeout.ms,60000,Timeout that the FC waits for the new active to become active
+5,dfs.namenode.path.based.cache.retry.interval.ms,30000,"When the NameNode needs to uncache something that is cached, or cache
+    something that is not cached, it must direct the DataNodes to do so by
+    sending a DNA_CACHE or DNA_UNCACHE command in response to a DataNode
+    heartbeat.  This parameter controls how frequently the NameNode will
+    resend these commands."
+6,ipc.client.connect.retry.interval,1000,"Indicates the number of milliseconds a client will wait for
+    before retrying to establish a server connection."
+7,dfs.namenode.reencrypt.edek.threads,10,"Maximum number of re-encrypt threads to contact the KMS
+    and re-encrypt the edeks."
+8,yarn.nodemanager.local-cache.max-files-per-directory,8192,
+9,dfs.webhdfs.ugi.expire.after.access,600000,"How long in milliseconds after the last access
+      the cached UGI will expire. With 0, never expire."

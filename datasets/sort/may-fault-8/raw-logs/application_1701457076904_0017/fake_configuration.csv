@@ -1,0 +1,25 @@
+,name,value,description
+0,mapreduce.jobhistory.datestring.cache.size,-0.12605387,"Size of the date string cache. Effects the number of directories
+  which will be scanned to find a job."
+1,dfs.image.parallel.threads,4,"The number of threads to use when dfs.image.parallel.load is
+        enabled. This setting should be less than
+        dfs.image.parallel.target.sections. The optimal number of
+        threads will depend on the hardware and environment."
+2,mapreduce.shuffle.port,13562,"Default port that the ShuffleHandler will run on. ShuffleHandler
+   is a service run at the NodeManager to facilitate transfers of intermediate
+   Map outputs to requesting Reducers."
+3,yarn.dispatcher.print-events-info.threshold,5000,
+4,dfs.client.block.write.retries,3,"The number of retries for writing blocks to the data nodes, 
+  before we signal failure to the application."
+5,dfs.client.hedged.read.threadpool.size,0,"Support 'hedged' reads in DFSClient. To enable this feature, set the parameter
+    to a positive number. The threadpool size is how many threads to dedicate
+    to the running of these 'hedged', concurrent reads in your client."
+6,dfs.provided.aliasmap.load.retries,0,"The number of retries on the Datanode to load the provided aliasmap;
+      defaults to 0."
+7,dfs.balancer.getBlocks.size,2147483648,"Total size in bytes of Datanode blocks to get when fetching a source's
+    block list."
+8,yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts,3,"The number of client retries on socket timeouts to the AM - before
+    reconnecting to the RM to fetch Application Status.
+    In other words, it is the ipc.client.connect.max.retries.on.timeouts to be used during
+    reconnecting to the RM and fetching Application Status."
+9,yarn.scheduler.minimum-allocation-mb,1024,

@@ -1,0 +1,4 @@
+dfs.client.slow.io.warning.threshold.ms	30000	INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+        	30

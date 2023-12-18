@@ -1,0 +1,17 @@
+,name,value,description
+0,file.stream-buffer-size,-169077068,"The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations."
+1,yarn.sharedcache.store.in-memory.initial-delay-mins,10,
+2,yarn.resourcemanager.scheduler.client.thread-count,50,
+3,mapreduce.shuffle.max.threads,0,"Max allowed threads for serving shuffle connections. Set to zero
+  to indicate the default of 2 times the number of available
+  processors (as reported by Runtime.availableProcessors()). Netty is used to
+  serve requests, so a thread is not needed for each connection."
+4,dfs.block.access.key.update.interval,600,Interval in minutes at which namenode updates its access keys.
+5,dfs.client.max.block.acquire.failures,3,Maximum failures allowed when trying to get block information from a specific datanode.
+6,hadoop.security.kms.client.encrypted.key.cache.size,500,Size of the EncryptedKeyVersion cache Queue for each key
+7,yarn.client.application-client-protocol.poll-interval-ms,200,
+8,yarn.nodemanager.aux-services.manifest.reload-ms,0,
+9,dfs.datanode.socket.write.timeout,480000,Timeout in ms for clients socket writes to DataNodes.

@@ -1,0 +1,20 @@
+,name,value,description
+0,yarn.nodemanager.container-executor.exit-code-file.timeout-ms,-0.58132565,
+1,file.bytes-per-checksum,512,"The number of bytes per checksum.  Must not be larger than
+  file.stream-buffer-size"
+2,mapreduce.job.counters.max,120,The max number of user counters allowed per job.
+3,dfs.client.socketcache.expiryMsec,3000,Socket cache expiration for short-circuit reads in msec.
+4,yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs,60,
+5,yarn.nodemanager.health-checker.interval-ms,600000,
+6,yarn.nodemanager.process-kill-wait.ms,5000,
+7,yarn.nodemanager.delete.debug-delay-sec,0,
+8,dfs.content-summary.sleep-microsec,500,"The length of time in microseconds to put the thread to sleep, between reaquiring the locks
+    in content summary computation."
+9,dfs.ha.log-roll.period,120,"How often, in seconds, the StandbyNode should ask the active to
+    roll edit logs. Since the StandbyNode only reads from finalized
+    log segments, the StandbyNode will only be as up-to-date as how
+    often the logs are rolled. Note that failover triggers a log roll
+    so the StandbyNode will be up to date before it becomes active.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval.If no time unit is specified then seconds
+    is assumed."

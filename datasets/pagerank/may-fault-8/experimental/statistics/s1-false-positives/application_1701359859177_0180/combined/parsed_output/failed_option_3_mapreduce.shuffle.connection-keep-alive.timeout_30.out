@@ -1,0 +1,1 @@
+mapreduce.shuffle.connection-keep-alive.timeout	5	INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0180_r_000008	30

@@ -1,0 +1,19 @@
+,name,value,description
+0,mapreduce.job.encrypted-intermediate-data-key-size-bits,666005954,Mapreduce encrypt data key size default is 128
+1,yarn.resourcemanager.decommissioning-nodes-watcher.poll-interval-secs,20,
+2,ipc.client.connect.retry.interval,1000,"Indicates the number of milliseconds a client will wait for
+    before retrying to establish a server connection."
+3,seq.io.sort.mb,100,"The total amount of buffer memory to use while sorting files,
+      while using SequenceFile.Sorter, in megabytes. By default,
+      gives each merge stream 1MB, which should minimize seeks."
+4,dfs.qjournal.parallel-read.num-threads,5,Number of threads per JN to be used for tailing edits.
+5,dfs.storage.policy.satisfier.self.retry.timeout.millis,300000,"If any of file related block movements not at all reported by datanode,
+    then after this timeout(in milliseconds), the item will be added back to movement needed list
+    at namenode which will be retried for block movements.
+    The default value is 5 * 60 * 1000 (5 mins)"
+6,hadoop.registry.zk.retry.interval.ms,1000,
+7,yarn.sharedcache.nested-level,3,
+8,yarn.timeline-service.entity-group-fs-store.leveldb-cache-read-cache-size,10485760,
+9,dfs.blockreport.initialDelay,0,"Delay for first block report in seconds. Support multiple time unit
+    suffix(case insensitive), as described in dfs.heartbeat.interval.If
+    no time unit is specified then seconds is assumed"

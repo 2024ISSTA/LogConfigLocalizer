@@ -1,0 +1,14 @@
+name:mapreduce.task.timeout
+value:600000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0293_r_000009
+explanation:The log indicates that a task is being speculated, which could be due to the task taking longer than expected. The configuration option 'mapreduce.task.timeout' determines the time before a task will be terminated if it neither reads an input, writes an output, nor updates its status string. If this value is set too low, it could cause tasks to be speculated and potentially terminated prematurely.
+
+name:yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms
+value:1000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0293_r_000009
+explanation:The log indicates that a task is being speculated, which could be due to the task taking longer than expected. The configuration option 'yarn.app.mapreduce.am.scheduler.heartbeat.interval-ms' determines the interval at which the MR AppMaster should send heartbeats to the ResourceManager. If this value is set too high, it could cause tasks to be speculated and potentially terminated prematurely.
+
+name:ipc.client.idlethreshold
+value:<missing>
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0293_r_000009
+explanation:The log indicates that a task is being speculated, which could be due to the task taking longer than expected. The configuration option 'ipc.client.idlethreshold' defines the threshold number of connections after which connections will be inspected for idleness. If this value is not set, it could cause tasks to be speculated and potentially terminated prematurely.

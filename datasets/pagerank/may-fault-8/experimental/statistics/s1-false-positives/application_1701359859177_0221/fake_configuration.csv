@@ -1,0 +1,21 @@
+,name,value,description
+0,yarn.dispatcher.drain-events.timeout,0,<missing>
+1,yarn.resourcemanager.activities-manager.app-activities.ttl-ms,600000,
+2,yarn.nodemanager.node-labels.resync-interval-ms,120000,
+3,dfs.storage.policy.satisfier.work.multiplier.per.iteration,1,"*Note*: Advanced property. Change with caution.
+    This determines the total amount of block transfers to begin in
+    one iteration, for satisfy the policy. The actual number is obtained by
+    multiplying this multiplier with the total number of live nodes in the
+    cluster. The result number is the number of blocks to begin transfers
+    immediately. This number can be any positive, non-zero integer."
+4,yarn.timeline-service.leveldb-timeline-store.ttl-interval-ms,300000,
+5,yarn.resourcemanager.node-labels.provider.fetch-interval-ms,1800000,
+6,dfs.balancer.dispatcherThreads,200,"Size of the thread pool for the HDFS balancer block mover.
+    dispatchExecutor"
+7,dfs.http.client.failover.max.attempts,15,"Specify the max number of failover attempts for WebHDFS client
+    in case of network exception."
+8,dfs.balancer.getBlocks.size,2147483648,"Total size in bytes of Datanode blocks to get when fetching a source's
+    block list."
+9,dfs.datanode.slow.io.warning.threshold.ms,300,"The threshold in milliseconds at which we will log a slow
+    io warning in a datanode. By default, this parameter is set to 300
+    milliseconds."

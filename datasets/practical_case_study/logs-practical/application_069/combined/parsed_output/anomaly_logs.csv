@@ -1,0 +1,10 @@
+anomaly_degree,content
+0.2,"Error Caused by: java.lang.NullPointerException
+    at org.apache.hadoop.ha.ZKFailoverController.doRun(ZKFailoverController.java:258)
+    at org.apache.hadoop.ha.ZKFailoverController.access$000(ZKFailoverController.java:63)
+    at org.apache.hadoop.ha.ZKFailoverController$1.run(ZKFailoverController.java:181)
+    at org.apache.hadoop.ha.ZKFailoverController$1.run(ZKFailoverController.java:177)
+    at org.apache.hadoop.security.SecurityUtil.doAsLoginUserOrFatal(SecurityUtil.java:503)
+    at org.apache.hadoop.ha.ZKFailoverController.run(ZKFailoverController.java:177)
+    at org.apache.hadoop.ha.MiniZKFCCluster$DummyZKFCThread.doWork(MiniZKFCCluster.java:301)
+    at org.apache.hadoop.test.MultithreadedTestUtil$TestingThread.run(MultithreadedTestUtil.java:189)"

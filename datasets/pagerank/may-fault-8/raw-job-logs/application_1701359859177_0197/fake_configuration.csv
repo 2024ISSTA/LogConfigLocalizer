@@ -1,0 +1,26 @@
+,name,value,description
+0,io.bytes.per.checksum,,"The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size."
+1,ftp.bytes-per-checksum,512,"The number of bytes per checksum.  Must not be larger than
+  ftp.stream-buffer-size"
+2,dfs.datanode.transfer.socket.send.buffer.size,0,"Socket send buffer size for DataXceiver (mirroring packets to downstream
+    in pipeline). This may affect TCP connection throughput.
+    If it is set to zero or negative value, no buffer size will be set
+    explicitly, thus enable tcp auto-tuning on some system.
+    The default value is 0."
+3,mapreduce.reduce.shuffle.retry-delay.max.ms,60000,"The maximum number of ms the reducer will delay before retrying
+  to download map data."
+4,mapreduce.input.fileinputformat.list-status.num-threads,1,"The number of threads to use to list and fetch block locations
+  for the specified input paths. Note: multiple threads should not be used
+  if a custom non thread-safe path filter is used."
+5,yarn.nodemanager.sleep-delay-before-sigkill.ms,250,
+6,dfs.namenode.safemode.min.datanodes,0,"Specifies the number of datanodes that must be considered alive
+    before the name node exits safemode.
+    Values less than or equal to 0 mean not to take the number of live
+    datanodes into account when deciding whether to remain in safe mode
+    during startup.
+    Values greater than the number of datanodes in the cluster
+    will make safe mode permanent."
+7,yarn.scheduler.configuration.store.max-logs,1000,
+8,file.replication,1,Replication factor
+9,yarn.resourcemanager.zk-appid-node.split-index,0,

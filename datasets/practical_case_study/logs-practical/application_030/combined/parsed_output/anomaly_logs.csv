@@ -1,0 +1,19 @@
+anomaly_degree,content
+0.2,"Error Caused by: java.lang.NullPointerException
+at java.io.File.(File.java:222)
+at org.apache.hadoop.mapred.JobHistory.init(JobHistory.java:121)
+at org.apache.hadoop.mapred.JobTracker.(JobTracker.java:672)
+at org.apache.hadoop.mapred.ExtJobTracker.(ExtJobTracker.java:41)
+at org.smartfrog.services.hadoop.components.tracker.JobTrackerImpl.sfStart(JobTrackerImpl.java:53)
+at org.smartfrog.sfcore.compound.CompoundImpl.sfStartChildren(CompoundImpl.java:659)
+at org.smartfrog.sfcore.compound.CompoundImpl.sfStart(CompoundImpl.java:632)
+at org.smartfrog.services.assertions.TestCompoundImpl.sfStart(TestCompoundImpl.java:249)
+at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+at sun.rmi.transport.Transport$1.run(Transport.java:159)
+at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+at java.lang.Thread.run(Thread.java:619)"

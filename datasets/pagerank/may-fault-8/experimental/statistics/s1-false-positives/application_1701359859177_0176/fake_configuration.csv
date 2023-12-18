@@ -1,0 +1,17 @@
+,name,value,description
+0,hadoop.security.groups.cache.warn.after.ms,371973238,"If looking up a single user to group takes longer than this amount of
+    milliseconds, we will log a warning message."
+1,hadoop.zk.num-retries,1000,Number of tries to connect to ZooKeeper.
+2,dfs.namenode.retrycache.expirytime.millis,600000,The time for which retry cache entries are retained.
+3,yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size,10,"The initial size of thread pool to launch containers in the
+    app master."
+4,file.replication,1,Replication factor
+5,yarn.nodemanager.amrmproxy.client.thread-count,25,
+6,yarn.timeline-service.entity-group-fs-store.leveldb-cache-read-cache-size,10485760,
+7,mapreduce.job.maxtaskfailures.per.tracker,3,"The number of task-failures on a node manager of a given job
+               after which new tasks of that job aren't assigned to it. It
+               MUST be less than mapreduce.map.maxattempts and
+               mapreduce.reduce.maxattempts otherwise the failed task will
+               never be tried on a different node."
+8,yarn.nodemanager.localizer.client.thread-count,5,
+9,fs.ftp.host.port,21,FTP filesystem connects to fs.ftp.host on this port

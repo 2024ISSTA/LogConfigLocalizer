@@ -1,0 +1,14 @@
+name:mapreduce.job.encrypted-intermediate-data
+value:true
+relevant log:1-Error java.lang.NullPointerException
+explanation: The NullPointerException could be caused by the encryption of intermediate data in the MapReduce job. The stack trace indicates that the error occurred during the initialization of the CryptoOutputStream, which is used for encryption. This suggests that there might be an issue with the encryption configuration.
+
+name:hadoop.security.kms.client.failover.sleep.base.millis
+value:100
+relevant log:1-Error java.lang.NullPointerException
+explanation: The stack trace indicates that the error occurred during the initialization of the CryptoOutputStream, which is used for encryption. This configuration option is related to the Key Management Server (KMS) client, which might be involved in the encryption process. The error could be due to the failover sleep base milliseconds being too short, causing the KMS client to fail to connect to the KMS server.
+
+name:yarn.timeline-service.ttl-ms
+value:604800000
+relevant log:<missing>
+explanation: The description for this configuration option is missing, which might cause errors. The value seems to be a time-to-live (TTL) setting for the YARN timeline service. If the TTL is set too high, it might cause the timeline service to keep data for too long, leading to memory issues. However, without a relevant log, it's hard to confirm this.

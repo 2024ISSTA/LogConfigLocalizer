@@ -1,0 +1,14 @@
+name:mapred.job.tracker
+value:local
+relevant log:1-Failed to launch container. java.lang.ClassCastException: org.apache.hadoop.fs.RawLocalFileSystem cannot be cast to org.apache.hadoop.fs.LocalFileSystem
+explanation: The error log indicates a ClassCastException where RawLocalFileSystem cannot be cast to LocalFileSystem. This could be due to the configuration of the job tracker being set to local, which might not be compatible with the current file system.
+
+name:dfs.client.cached.conn.retry
+value:3
+relevant log:1-Failed to launch container. java.lang.ClassCastException: org.apache.hadoop.fs.RawLocalFileSystem cannot be cast to org.apache.hadoop.fs.LocalFileSystem
+explanation: The error log indicates a ClassCastException which could be due to a failed connection retry. The current configuration allows for 3 retries, which might not be sufficient in some cases, leading to the failure in launching the container.
+
+name:fs.du.interval
+value:600000
+relevant log:1-Failed to launch container. java.lang.ClassCastException: org.apache.hadoop.fs.RawLocalFileSystem cannot be cast to org.apache.hadoop.fs.LocalFileSystem
+explanation: The error log indicates a ClassCastException which could be due to the file space usage statistics refresh interval. The current configuration is set to 600000 msec, which might not be suitable for the current workload, leading to the failure in launching the container.

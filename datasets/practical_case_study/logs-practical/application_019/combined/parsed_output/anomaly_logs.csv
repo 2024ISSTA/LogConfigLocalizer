@@ -1,0 +1,11 @@
+anomaly_degree,content
+0.2,"ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: java.lang.NullPointerException
+at org.apache.hadoop.net.NetUtils.createSocketAddr(NetUtils.java:132)
+at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:130)
+at org.apache.hadoop.hdfs.server.namenode.NameNode.getAddress(NameNode.java:134)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.startDataNode(DataNode.java:235)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.<init>(DataNode.java:205)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance(DataNode.java:1199)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode(DataNode.java:1154)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode(DataNode.java:1162)
+at org.apache.hadoop.hdfs.server.datanode.DataNode.main(DataNode.java:1284"

@@ -1,0 +1,17 @@
+0,1
+9fba4d11,job_<*>_0611Job Transitioned from <*> to <*>
+9c9cab88,Instantiated MRClientService at ed761ad59d44<*>
+2356d3c2,Logging initialized @2412ms to org.eclipse.jetty.util.log.Slf4jLog
+64af699d,jetty-<*>.<*>.<*>.v20230217; built: <*>-<*>-17T08:<*>:<*>.309Z; git: b45c405e4544384de066f814ed42ae3dceacdd49; jvm <*><*>-post-Ubuntu-0ubuntu120.<*>
+11ab4b15,node0 Scavenging every 660000ms
+6d472840,"Started ServerConnector@71b6172c{HTTP/<*>.<*>, (http/<*>.<*>)}{<*>}"
+33c8c04a,Processing the event EventType: JOB_SETUP
+d5bff8b5,Progress of TaskAttempt attempt_<*>_<*>_m_<*>_<*> is : <*>.<*>
+d1df58d8,Done acknowledgment from attempt_<*>_<*>_m_<*>_<*>
+1aac72f8,Task succeeded with attempt attempt_<*>_<*>_m_<*>_<*>
+c53914c9,Diagnostics report from attempt_<*>_<*>_m_<*>_<*>: [<*>-<*>-<*> <*>:<*>:<*>.<*>]Exception from container-launch.Container id: container_<*>_<*>_<*>_<*> Exit code: <*>
+aab13e27,"attempt_<*>_<*>_m_<*>_<*> transitioned from state RUNNING to FAILED, event type is TA_CONTAINER_COMPLETED and nodeId=2f08f873c798:<*>"
+86ff070f,1 failures on node 2f08f873c<*>
+ae71f36c,Added attempt_<*>_<*>_m_<*>_<*> to list of failed maps
+47ee49c2,"Assigning container Container: [ContainerId: container_<*>_<*>_<*>_<*>, AllocationRequestId: <*>, Version: <*>, NodeId: 2f08f873c798:<*>, NodeHttpAddress: 2f08f873c798:<*>, Resource: <memory:<*>, vCores:<*>>, Priority: <*>, Token: Token { kind: ContainerToken, service: <*> }, ExecutionType: GUARANTEED, ] to fast fail map"
+a275647a,Assigned from earlierFailedMaps

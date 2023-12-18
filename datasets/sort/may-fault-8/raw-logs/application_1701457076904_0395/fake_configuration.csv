@@ -1,0 +1,18 @@
+,name,value,description
+0,dfs.datanode.slowdisk.low.threshold.ms,1002208006,Threshold in milliseconds below which a disk is definitely not slow.
+1,yarn.resourcemanager.nodemanager-connect-retries,10,
+2,hadoop.security.crypto.buffer.size,8192,The buffer size used by CryptoInputStream and CryptoOutputStream.
+3,fs.s3a.socket.recv.buffer,8192,Socket receive buffer hint to amazon connector. Represented in bytes.
+4,dfs.datanode.fsdatasetasyncdisk.max.threads.per.volume,4,"The maximum number of threads per volume used to process async disk
+    operations on the datanode. These threads consume I/O and CPU at the
+    same time. This will affect normal data node operations."
+5,ha.health-monitor.rpc.connect.max.retries,1,"The number of retries on connect error when establishing RPC proxy
+    connection to NameNode, used for monitorHealth() calls."
+6,dfs.client.block.write.locateFollowingBlock.retries,5,Number of retries to use when finding the next block during HDFS writes.
+7,yarn.resourcemanager.admin.client.thread-count,1,
+8,fs.s3a.retry.throttle.limit,20,Number of times to retry any throttled request.
+9,dfs.storage.policy.satisfier.recheck.timeout.millis,60000,"Blocks storage movements monitor re-check interval in milliseconds.
+    This check will verify whether any blocks storage movement results arrived from DN
+    and also verify if any of file blocks movements not at all reported to DN
+    since dfs.storage.policy.satisfier.self.retry.timeout.
+    The default value is 1 * 60 * 1000 (1 mins)"

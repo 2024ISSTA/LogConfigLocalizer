@@ -1,0 +1,25 @@
+,name,value,description
+0,yarn.router.pipeline.cache-max-size,0,
+1,yarn.nodemanager.health-checker.interval-ms,600000,
+2,dfs.datanode.max.locked.memory,0,"The amount of memory in bytes to use for caching of block replicas in
+    memory on the datanode. The datanode's maximum locked memory soft ulimit
+    (RLIMIT_MEMLOCK) must be set to at least this value, else the datanode
+    will abort on startup. Support multiple size unit suffix(case insensitive),
+    as described in dfs.blocksize.
+
+    By default, this parameter is set to 0, which disables in-memory caching.
+
+    If the native libraries are not available to the DataNode, this
+    configuration has no effect."
+3,dfs.namenode.max.op.size,52428800,Maximum opcode size in bytes.
+4,dfs.balancer.movedWinWidth,5400000,"Window of time in ms for the HDFS balancer tracking blocks and its
+    locations."
+5,yarn.nodemanager.process-kill-wait.ms,5000,
+6,yarn.nodemanager.health-checker.timeout-ms,1200000,
+7,dfs.http.client.failover.max.attempts,15,"Specify the max number of failover attempts for WebHDFS client
+    in case of network exception."
+8,dfs.block.misreplication.processing.limit,10000,Maximum number of blocks to process for initializing replication queues.
+9,hadoop.fuse.connection.timeout,300,"The minimum number of seconds that we'll cache libhdfs connection objects
+    in fuse_dfs. Lower values will result in lower memory consumption; higher
+    values may speed up access by avoiding the overhead of creating new
+    connection objects."

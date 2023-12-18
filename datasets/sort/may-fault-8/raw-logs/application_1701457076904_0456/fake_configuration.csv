@@ -1,0 +1,17 @@
+,name,value,description
+0,ipc.client.connect.timeout,0,"Indicates the number of milliseconds a client will wait for the
+               socket to establish a server connection."
+1,ha.zookeeper.session-timeout.ms,10000,"The session timeout to use when the ZKFC connects to ZooKeeper.
+    Setting this value to a lower value implies that server crashes
+    will be detected more quickly, but risks triggering failover too
+    aggressively in the case of a transient error or network blip."
+2,dfs.webhdfs.netty.low.watermark,32768,Low watermark configuration to Netty for Datanode WebHdfs.
+3,yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size,10000,
+4,dfs.namenode.name.cache.threshold,10,"Frequently accessed files that are accessed more times than this
+    threshold are cached in the FSDirectory nameCache."
+5,yarn.timeline-service.client.drain-entities.timeout.ms,2000,
+6,dfs.namenode.replication.max-streams-hard-limit,4,Hard limit for all replication streams.
+7,mapreduce.jobhistory.jobname.limit,50,Number of characters allowed for job name in Job History Server web page.
+8,dfs.storage.policy.satisfier.retry.max.attempts,3,"Max retry to satisfy the block storage policy. After this retry block will be removed
+    from the movement needed queue."
+9,yarn.resourcemanager.epoch.range,0,

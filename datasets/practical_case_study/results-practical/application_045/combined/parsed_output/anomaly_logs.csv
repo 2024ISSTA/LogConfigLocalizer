@@ -1,0 +1,28 @@
+anomaly_degree,content
+0.2,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+java.io.IOException: java.lang.NullPointerException
+        at org.apache.hadoop.mapred.JobTracker.updateTaskStatuses(JobTracker.java:3103)
+        at org.apache.hadoop.mapred.JobTracker.processHeartbeat(JobTracker.java:2484)
+        at org.apache.hadoop.mapred.JobTracker.heartbeat(JobTracker.java:2285)
+        at sun.reflect.GeneratedMethodAccessor39.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+        at java.lang.reflect.Method.invoke(Method.java:597)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:396)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)"
+0.2,"INFO org.apache.hadoop.ipc.Server: IPC Server handler 17 on 57426, call getTaskDiagnostics(attempt_200902061402_3468_m_000625_0) from <host:port>: error: java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+java.io.IOException: java.lang.IllegalArgumentException: Job job_200902061402_3468 not found.
+        at org.apache.hadoop.mapred.JobTracker.getTaskDiagnostics(JobTracker.java:2960)
+        at sun.reflect.GeneratedMethodAccessor164.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+        at java.lang.reflect.Method.invoke(Method.java:597)
+        at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:508)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:959)
+        at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:955)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at javax.security.auth.Subject.doAs(Subject.java:396)
+        at org.apache.hadoop.ipc.Server$Handler.run(Server.java:953)"

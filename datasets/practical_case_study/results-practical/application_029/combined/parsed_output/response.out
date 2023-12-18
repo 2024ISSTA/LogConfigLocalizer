@@ -1,0 +1,14 @@
+name:hadoop.security.authentication
+value:kerberos
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException which might be caused by incorrect authentication method. The configuration option 'hadoop.security.authentication' is set to 'kerberos', which might not be compatible with some parts of the system.
+
+name:dfs.qjournal.accept-recovery.timeout.ms
+value:120000
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException during a RPC call. The configuration option 'dfs.qjournal.accept-recovery.timeout.ms' is related to recovery/synchronization for a specific segment, which might be related to the error.
+
+name:yarn.app.mapreduce.am.job.committer.cancel-timeout
+value:60000
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException during a RPC call. The configuration option 'yarn.app.mapreduce.am.job.committer.cancel-timeout' is related to the time to wait for the output committer to cancel an operation if the job is killed, which might be related to the error.

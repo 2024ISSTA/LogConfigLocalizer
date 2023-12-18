@@ -1,0 +1,21 @@
+,name,value,description
+0,mapreduce.reduce.cpu.vcores,0,"The number of virtual cores to request from the scheduler for
+  each reduce task."
+1,dfs.client.server-defaults.validity.period.ms,3600000,"The amount of milliseconds after which cached server defaults are updated.
+
+    By default this parameter is set to 1 hour.
+    Support multiple time unit suffix(case insensitive), as described
+    in dfs.heartbeat.interval."
+2,dfs.blockreport.intervalMsec,21600000,Determines block reporting interval in milliseconds.
+3,yarn.resourcemanager.rm.container-allocation.expiry-interval-ms,600000,
+4,yarn.timeline-service.client.fd-clean-interval-secs,60,
+5,dfs.client.deadnode.detection.probe.suspectnode.interval.ms,300,Interval time in milliseconds for probing suspect node behavior.
+6,mapreduce.task.exit.timeout,60000,"The number of milliseconds before a task will be
+  terminated if it stays in finishing state for too long.
+  After a task attempt completes from TaskUmbilicalProtocol's point of view,
+  it will be transitioned to finishing state. That will give a chance for the
+  task to exit by itself."
+7,dfs.balancer.service.retries.on.exception,5,"When the balancer is executed as a long-running service, it will retry upon encountering an exception. This
+    configuration determines how many times it will retry before considering the exception to be fatal and quitting."
+8,mapreduce.job.local-fs.single-disk-limit.check.interval-ms,5000,Interval of disk limit check to run in ms.
+9,yarn.sharedcache.client-server.thread-count,50,

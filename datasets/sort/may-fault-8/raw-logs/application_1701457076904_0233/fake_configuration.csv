@@ -1,0 +1,20 @@
+,name,value,description
+0,dfs.datanode.max.nodes.to.report,,"Number of nodes to include in JSON report. We will return nodes with
+    the highest number of votes from peers."
+1,dfs.namenode.checkpoint.check.period,60,"The SecondaryNameNode and CheckpointNode will poll the NameNode
+  every 'dfs.namenode.checkpoint.check.period' seconds to query the number
+  of uncheckpointed transactions. Support multiple time unit suffix(case insensitive),
+  as described in dfs.heartbeat.interval.If no time unit is specified then
+  seconds is assumed."
+2,mapreduce.reduce.shuffle.fetch.retry.timeout-ms,30000,"Timeout value for fetcher to retry to fetch again when some
+  non-fatal failure happens because of some events like NM restart."
+3,dfs.bytes-per-checksum,512,"The number of bytes per checksum.  Must not be larger than
+  dfs.stream-buffer-size"
+4,fs.s3a.socket.send.buffer,8192,Socket send buffer hint to amazon connector. Represented in bytes.
+5,yarn.timeline-service.client.fd-clean-interval-secs,60,
+6,file.blocksize,67108864,Block size
+7,mapreduce.job.counters.max,120,The max number of user counters allowed per job.
+8,dfs.namenode.fs-limits.max-blocks-per-file,10000,"Maximum number of blocks per file, enforced by the Namenode on
+        write. This prevents the creation of extremely large files which can
+        degrade performance."
+9,yarn.resourcemanager.epoch.range,0,

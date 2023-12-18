@@ -1,0 +1,3 @@
+mapred.local.dir	/usr/local/hadoop/tmp	Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+	95

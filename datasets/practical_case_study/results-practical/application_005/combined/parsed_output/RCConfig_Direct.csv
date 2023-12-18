@@ -1,0 +1,3 @@
+name,value,relevant log,explanation
+fs.file.impl,org.apache.hadoop.fs.RawLocalFileSystem,"Error java.lang.ClassCastException: class org.apache.hadoop.fs.RawLocalFileSystem cannot be cast to class org.apache.hadoop.fs.LocalFileSystem (org.apache.hadoop.fs.RawLocalFileSystem and org.apache.hadoop.fs.LocalFileSystem are in unnamed module of loader 'app')
+	",value-hit

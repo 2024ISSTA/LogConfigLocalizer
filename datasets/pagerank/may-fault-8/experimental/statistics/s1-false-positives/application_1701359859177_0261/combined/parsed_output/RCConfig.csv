@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+yarn.nodemanager.runtime.linux.runc.image-tag-to-manifest-plugin.cache-refresh-interval-secs,-0.52532107,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0261_r_000009,This configuration option is related to the task speculation in YARN. The negative value might cause errors in the task speculation process.
+dfs.image.parallel.threads,4,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0261_r_000009,"The number of threads for loading DFS images might affect the performance of the task. If the number is too low, it might cause the task to be speculated."
+ipc.client.connect.retry.interval,1000,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0261_r_000009,"The interval for retrying to establish a server connection might affect the task execution. If the interval is too short, it might cause the task to be speculated."

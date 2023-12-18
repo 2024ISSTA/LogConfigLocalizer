@@ -1,0 +1,18 @@
+,name,value,description
+0,hadoop.fuse.connection.timeout,-299075894,"The minimum number of seconds that we'll cache libhdfs connection objects
+    in fuse_dfs. Lower values will result in lower memory consumption; higher
+    values may speed up access by avoiding the overhead of creating new
+    connection objects."
+1,hadoop.registry.zk.retry.times,5,Zookeeper connection retry count before failing
+2,mapreduce.input.lineinputformat.linespermap,1,"When using NLineInputFormat, the number of lines of input data
+  to include in each split."
+3,ipc.[port_number].decay-scheduler.metrics.top.user.count,10,"The number of top (i.e., heaviest) users to emit metric
+    information about. This property applies to DecayRpcScheduler."
+4,ha.health-monitor.sleep-after-disconnect.ms,1000,How long to sleep after an unexpected RPC error.
+5,dfs.ha.zkfc.port,8019,"The port number that the zookeeper failover controller RPC
+    server binds to."
+6,yarn.nodemanager.node-labels.resync-interval-ms,120000,
+7,yarn.resourcemanager.placement-constraints.scheduler.pool-size,1,
+8,ha.health-monitor.rpc.connect.max.retries,1,"The number of retries on connect error when establishing RPC proxy
+    connection to NameNode, used for monitorHealth() calls."
+9,yarn.timeline-service.ttl-ms,604800000,

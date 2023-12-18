@@ -1,0 +1,1 @@
+mapred.local.dir	<missing>	ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test	30

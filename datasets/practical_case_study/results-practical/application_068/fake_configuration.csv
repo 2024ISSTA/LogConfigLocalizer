@@ -1,0 +1,18 @@
+,name,value,description
+0,hadoop.prometheus.endpoint.enabled,true,
+1,dfs.client.socketcache.expiryMsec,3000,Socket cache expiration for short-circuit reads in msec.
+2,yarn.nm.liveness-monitor.expiry-interval-ms,600000,
+3,dfs.namenode.maintenance.replication.min,1,Minimal live block replication in existence of maintenance mode.
+4,ipc.client.kill.max,10,Defines the maximum number of clients to disconnect in one go.
+5,mapreduce.map.cpu.vcores,1,"The number of virtual cores to request from the scheduler for
+  each map task."
+6,dfs.namenode.lease-recheck-interval-ms,2000,"During the release of lease a lock is hold that make any
+    operations on the namenode stuck. In order to not block them during
+    a too long duration we stop releasing lease after this max lock limit."
+7,dfs.client.short.circuit.replica.stale.threshold.ms,1800000,"The maximum amount of time that we will consider a short-circuit replica to
+    be valid, if there is no communication from the DataNode.  After this time
+    has elapsed, we will re-fetch the short-circuit replica even if it is in
+    the cache."
+8,dfs.storage.policy.satisfier.retry.max.attempts,3,"Max retry to satisfy the block storage policy. After this retry block will be removed
+    from the movement needed queue."
+9,dfs.webhdfs.netty.high.watermark,65535,High watermark configuration to Netty for Datanode WebHdfs.

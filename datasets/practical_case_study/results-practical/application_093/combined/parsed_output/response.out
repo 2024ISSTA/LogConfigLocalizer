@@ -1,0 +1,14 @@
+name:fs.defaultFS
+value:hdfs://NameNode:9000/
+relevant log:1-Application application_1527018750538_0001 failed 2 times due to Error launching appattempt_1527018750538_0001_000002. Got exception: java.net.ConnectException: Call From NameNode/193.198.139.50 to localhost:41227 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+explanation: The log indicates a connection issue with the NameNode. The configuration option 'fs.defaultFS' is the default name of the filesystem and it is set to 'hdfs://NameNode:9000/'. The error might be due to incorrect or unreachable NameNode address.
+
+name:dfs.namenode.service.handler.count
+value:10
+relevant log:1-Application application_1527018750538_0001 failed 2 times due to Error launching appattempt_1527018750538_0001_000002. Got exception: java.net.ConnectException: Call From NameNode/193.198.139.50 to localhost:41227 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+explanation: The configuration option 'dfs.namenode.service.handler.count' is related to the number of Namenode RPC server threads that listen to requests from DataNodes and from all other non-client nodes. The connection issue might be due to insufficient handler count.
+
+name:mapreduce.job.maxtaskfailures.per.tracker
+value:3
+relevant log:1-Application application_1527018750538_0001 failed 2 times due to Error launching appattempt_1527018750538_0001_000002. Got exception: java.net.ConnectException: Call From NameNode/193.198.139.50 to localhost:41227 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+explanation: The configuration option 'mapreduce.job.maxtaskfailures.per.tracker' is related to the number of task-failures on a node manager of a given job after which new tasks of that job aren't assigned to it. The application failure might be due to exceeding the maximum task failures per tracker.

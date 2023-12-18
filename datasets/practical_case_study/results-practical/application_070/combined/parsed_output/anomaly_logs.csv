@@ -1,0 +1,6 @@
+anomaly_degree,content
+0.2,"Error java.lang.NullPointerException
+        at org.apache.hadoop.security.LdapGroupsMapping.goUpGroupHierarchy(LdapGroupsMapping.java:612)
+        at org.apache.hadoop.security.LdapGroupsMapping.lookupGroup(LdapGroupsMapping.java:489)
+        at org.apache.hadoop.security.LdapGroupsMapping.doGetGroups(LdapGroupsMapping.java:552)
+        at org.apache.hadoop.security.LdapGroupsMapping.getGroups(LdapGroupsMapping.java:365)"

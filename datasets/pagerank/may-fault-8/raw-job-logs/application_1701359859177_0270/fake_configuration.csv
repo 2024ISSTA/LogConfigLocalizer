@@ -1,0 +1,17 @@
+,name,value,description
+0,io.bytes.per.checksum,,"The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size."
+1,dfs.datanode.fsdatasetasyncdisk.max.threads.per.volume,4,"The maximum number of threads per volume used to process async disk
+    operations on the datanode. These threads consume I/O and CPU at the
+    same time. This will affect normal data node operations."
+2,yarn.app.mapreduce.client.max-retries,3,"The number of client retries to the RM/HS before
+    throwing exception. This is a layer above the ipc."
+3,ipc.client.connect.max.retries,10,"Indicates the number of retries a client will make to establish
+               a server connection."
+4,yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size,10,
+5,mapreduce.jobhistory.move.thread-count,3,The number of threads used to move files.
+6,yarn.resourcemanager.leveldb-state-store.compaction-interval-secs,3600,
+7,mapreduce.jobhistory.jobname.limit,50,Number of characters allowed for job name in Job History Server web page.
+8,dfs.namenode.edit.log.autoroll.check.interval.ms,300000,"How often an active namenode will check if it needs to roll its edit log,
+    in milliseconds."
+9,yarn.client.failover-retries,0,

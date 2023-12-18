@@ -1,0 +1,18 @@
+,name,value,description
+0,dfs.datanode.directoryscan.interval,0,"Interval in seconds for Datanode to scan data directories and
+  reconcile the difference between blocks in memory and on the disk.
+  Support multiple time unit suffix(case insensitive), as described
+  in dfs.heartbeat.interval.If no time unit is specified then seconds
+  is assumed."
+1,yarn.dispatcher.print-events-info.threshold,5000,
+2,yarn.timeline-service.writer.async.queue.capacity,100,
+3,tfile.fs.input.buffer.size,262144,Buffer size used for FSDataInputStream in bytes.
+4,yarn.resourcemanager.nm-tokens.master-key-rolling-interval-secs,86400,
+5,yarn.nodemanager.node-labels.resync-interval-ms,120000,
+6,mapreduce.task.io.sort.factor,10,"The number of streams to merge at once while sorting
+  files.  This determines the number of open file handles."
+7,yarn.timeline-service.entity-group-fs-store.retain-seconds,604800,
+8,ipc.[port_number].scheduler.priority.levels,4,"How many priority levels to use within the scheduler and call
+    queue. This property applies to RpcScheduler and CallQueue."
+9,dfs.namenode.reconstruction.pending.timeout-sec,300,"Timeout in seconds for block reconstruction.  If this value is 0 or less,
+    then it will default to 5 minutes."

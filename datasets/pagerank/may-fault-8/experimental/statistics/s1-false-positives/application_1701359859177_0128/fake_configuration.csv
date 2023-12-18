@@ -1,0 +1,18 @@
+,name,value,description
+0,ha.failover-controller.graceful-fence.connection.retries,,FC connection retries for graceful fencing
+1,dfs.content-summary.limit,5000,"The maximum content summary counts allowed in one locking period. 0 or a negative number
+    means no limit (i.e. no yielding)."
+2,dfs.namenode.resource.check.interval,5000,"The interval in milliseconds at which the NameNode resource checker runs.
+    The checker calculates the number of the NameNode storage volumes whose
+    available spaces are more than dfs.namenode.resource.du.reserved, and
+    enters safemode if the number becomes lower than the minimum value
+    specified by dfs.namenode.resource.checked.volumes.minimum."
+3,dfs.http.client.failover.sleep.max.millis,15000,"Specify the upper bound of sleep time in milliseconds between
+    retries or failovers for WebHDFS client."
+4,yarn.resourcemanager.proxy.connection.timeout,60000,
+5,yarn.timeline-service.client.fd-clean-interval-secs,60,
+6,dfs.qjournal.start-segment.timeout.ms,20000,Quorum timeout in milliseconds for starting a log segment.
+7,hadoop.security.crypto.buffer.size,8192,The buffer size used by CryptoInputStream and CryptoOutputStream.
+8,yarn.resourcemanager.placement-constraints.retry-attempts,3,
+9,dfs.datanode.restart.replica.expiration,50,"During shutdown for restart, the amount of time in seconds budgeted for
+    datanode restart."

@@ -1,0 +1,19 @@
+,name,value,description
+0,ha.failover-controller.graceful-fence.connection.retries,,FC connection retries for graceful fencing
+1,yarn.timeline-service.entity-group-fs-store.leveldb-cache-read-cache-size,10485760,
+2,dfs.client.hedged.read.threshold.millis,500,"Configure 'hedged' reads in DFSClient. This is the number of milliseconds
+    to wait before starting up a 'hedged' read."
+3,dfs.storage.policy.satisfier.retry.max.attempts,3,"Max retry to satisfy the block storage policy. After this retry block will be removed
+    from the movement needed queue."
+4,yarn.cluster.max-application-priority,0,
+5,dfs.namenode.decommission.backoff.monitor.pending.limit,10000,"When the Backoff monitor is enabled, determines the maximum number of blocks
+    related to decommission and maintenance operations that can be loaded
+    into the replication queue at any given time. Every
+    dfs.namenode.decommission.interval seconds, the list is checked to see if
+    the blocks have become fully replicated and then further blocks are added
+    to reach the limit defined in this parameter."
+6,yarn.nodemanager.resource.memory.cgroups.swappiness,0,
+7,dfs.namenode.retrycache.expirytime.millis,600000,The time for which retry cache entries are retained.
+8,yarn.nodemanager.node-attributes.provider.fetch-interval-ms,600000,
+9,dfs.namenode.delegation.key.update-interval,86400000,"The update interval for master key for delegation tokens 
+       in the namenode in milliseconds."

@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.zk-delegation-token-node.split-index
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009
+explanation: The log indicates that a speculative task is being added, which could be related to the configuration of the split index. A value of 0 might be causing issues with task distribution or speculation.
+
+name:mapreduce.job.max.split.locations
+value:15
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009
+explanation: The maximum number of split locations could be affecting the distribution of tasks. If the number is too low, it might be causing inefficient task distribution, leading to the need for speculation.
+
+name:yarn.nodemanager.localizer.client.thread-count
+value:5
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009
+explanation: The number of threads available for the localizer client could be affecting the performance of the system. If the number is too low, it might be causing delays or inefficiencies, leading to the need for speculation.

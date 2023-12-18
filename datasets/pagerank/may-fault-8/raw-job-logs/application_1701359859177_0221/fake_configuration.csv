@@ -1,0 +1,19 @@
+,name,value,description
+0,yarn.dispatcher.drain-events.timeout,0,
+1,yarn.nodemanager.disk-health-checker.min-free-space-per-disk-watermark-high-mb,0,
+2,dfs.namenode.handler.count,10,"The number of Namenode RPC server threads that listen to
+  requests from clients.
+  If dfs.namenode.servicerpc-address is not configured then
+  Namenode RPC server threads listen to requests from all nodes."
+3,mapreduce.reduce.shuffle.retry-delay.max.ms,60000,"The maximum number of ms the reducer will delay before retrying
+  to download map data."
+4,dfs.client.socketcache.capacity,16,"Socket cache capacity (in entries) for short-circuit reads.
+    If this value is set to 0, the client socket cache is disabled."
+5,dfs.client.write.byte-array-manager.count-reset-time-period-ms,10000,"The time period in milliseconds that the allocation count for each array length is
+    reset to zero if there is no increment."
+6,hadoop.security.kms.client.encrypted.key.cache.num.refill.threads,2,"Number of threads to use for refilling depleted EncryptedKeyVersion
+    cache Queues"
+7,ipc.client.connection.maxidletime,10000,"The maximum time in msec after which a client will bring down the
+               connection to the server."
+8,mapreduce.job.max.split.locations,15,"The max number of block locations to store for each split for
+    locality calculation."

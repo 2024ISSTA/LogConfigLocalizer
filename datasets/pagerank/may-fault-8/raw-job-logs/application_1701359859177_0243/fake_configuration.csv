@@ -1,0 +1,21 @@
+,name,value,description
+0,yarn.app.attempt.diagnostics.limit.kc,0.2991451,
+1,yarn.resourcemanager.connect.max-wait.ms,900000,
+2,dfs.ha.tail-edits.period,60,"How often, the StandbyNode and ObserverNode should check if there are new
+    edit log entries ready to be consumed. This is the minimum period between
+    checking; exponential backoff will be applied if no edits are found and
+    dfs.ha.tail-edits.period.backoff-max is configured. By default, no
+    backoff is applied.
+    Supports multiple time unit suffix (case insensitive), as described
+    in dfs.heartbeat.interval."
+3,mapreduce.job.max.split.locations,15,"The max number of block locations to store for each split for
+    locality calculation."
+4,yarn.app.mapreduce.am.resource.mb,1536,The amount of memory the MR AppMaster needs.
+5,ipc.[port_number].weighted-cost.lockexclusive,100,"The weight multiplier to apply to the time spent in the
+    processing phase which holds an exclusive (write) lock.
+    This property applies to WeightedTimeCostProvider."
+6,yarn.nodemanager.health-checker.interval-ms,600000,
+7,yarn.resourcemanager.nm-tokens.master-key-rolling-interval-secs,86400,
+8,dfs.http.client.failover.max.attempts,15,"Specify the max number of failover attempts for WebHDFS client
+    in case of network exception."
+9,dfs.datanode.ec.reconstruction.stripedread.buffer.size,65536,Datanode striped read buffer size.

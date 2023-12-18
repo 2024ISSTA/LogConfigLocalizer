@@ -1,0 +1,27 @@
+,name,value,description
+0,yarn.resourcemanager.hostname,,
+1,yarn.minicluster.yarn.nodemanager.resource.memory-mb,4096,
+2,mapreduce.jobhistory.joblist.cache.size,20000,Size of the job list cache
+3,mapreduce.job.running.reduce.limit,0,"The maximum number of simultaneous reduce tasks per job.
+  There is no limit if this value is 0 or negative."
+4,nfs.rtmax,1048576,"This is the maximum size in bytes of a READ request
+    supported by the NFS gateway. If you change this, make sure you
+    also update the nfs mount's rsize(add rsize= # of bytes to the 
+    mount directive)."
+5,yarn.sharedcache.store.in-memory.staleness-period-mins,10080,
+6,yarn.dispatcher.cpu-monitor.samples-per-min,60,
+7,hadoop.fuse.timer.period,5,"The number of seconds between cache expiry checks in fuse_dfs. Lower values
+    will result in fuse_dfs noticing changes to Kerberos ticket caches more
+    quickly."
+8,dfs.storage.policy.satisfier.work.multiplier.per.iteration,1,"*Note*: Advanced property. Change with caution.
+    This determines the total amount of block transfers to begin in
+    one iteration, for satisfy the policy. The actual number is obtained by
+    multiplying this multiplier with the total number of live nodes in the
+    cluster. The result number is the number of blocks to begin transfers
+    immediately. This number can be any positive, non-zero integer."
+9,dfs.client.socket.send.buffer.size,0,"Socket send buffer size for a write pipeline in DFSClient side.
+    This may affect TCP connection throughput.
+    If it is set to zero or negative value,
+    no buffer size will be set explicitly,
+    thus enable tcp auto-tuning on some system.
+    The default value is 0."

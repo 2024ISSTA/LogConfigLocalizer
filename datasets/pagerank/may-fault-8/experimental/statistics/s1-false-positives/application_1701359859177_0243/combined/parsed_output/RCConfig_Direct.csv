@@ -1,0 +1,3 @@
+name,value,relevant log,explanation
+yarn.app.attempt.diagnostics.limit.kc,0.2991451,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0243_m_000009,property-item-hit	attempt
+yarn.router.interceptor.user.threadpool-size,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0243_m_000009,value-hit

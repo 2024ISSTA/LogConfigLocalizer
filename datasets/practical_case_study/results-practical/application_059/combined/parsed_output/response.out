@@ -1,0 +1,14 @@
+name:mapreduce.task.io.sort.mb
+value:10
+relevant log:1-WARN org.apache.hadoop.mapred.Child: Error running child
+explanation: The error log indicates an ArrayIndexOutOfBoundsException during a mapreduce task. This could be due to insufficient buffer memory during sorting. Increasing the value of 'mapreduce.task.io.sort.mb' might resolve this issue.
+
+name:dfs.client.retry.times.get-last-block-length
+value:3
+relevant log:1-WARN org.apache.hadoop.mapred.Child: Error running child
+explanation: The error log shows an exception during a mapreduce task. If the task involves fetching blocks and there are network issues, increasing the value of 'dfs.client.retry.times.get-last-block-length' might help.
+
+name:dfs.client.deadnode.detection.rpc.threads
+value:20
+relevant log:1-WARN org.apache.hadoop.mapred.Child: Error running child
+explanation: The error log indicates an exception during a mapreduce task. If the task involves RPC calls and there are dead nodes, increasing the value of 'dfs.client.deadnode.detection.rpc.threads' might help in rechecking the liveness of dead nodes faster.

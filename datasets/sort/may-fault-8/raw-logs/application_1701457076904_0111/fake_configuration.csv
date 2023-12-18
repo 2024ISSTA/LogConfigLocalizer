@@ -1,0 +1,18 @@
+,name,value,description
+0,fs.s3a.list.version,-0.5466706,"Select which version of the S3 SDK's List Objects API to use.  Currently
+    support 2 (default) and 1 (older API)."
+1,dfs.client.hedged.read.threadpool.size,0,"Support 'hedged' reads in DFSClient. To enable this feature, set the parameter
+    to a positive number. The threadpool size is how many threads to dedicate
+    to the running of these 'hedged', concurrent reads in your client."
+2,dfs.datanode.lazywriter.interval.sec,60,Interval in seconds for Datanodes for lazy persist writes.
+3,yarn.sharedcache.cleaner.initial-delay-mins,10,
+4,yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms,10,
+5,mapreduce.jobhistory.joblist.cache.size,20000,Size of the job list cache
+6,dfs.datanode.data.dir.perm,700,"Permissions for the directories on on the local filesystem where
+  the DFS data node store its blocks. The permissions can either be octal or
+  symbolic."
+7,mapreduce.map.maxattempts,4,"Expert: The maximum number of attempts per map task.
+  In other words, framework will try to execute a map task these many number
+  of times before giving up on it."
+8,yarn.nodemanager.log.retain-seconds,10800,
+9,dfs.client.deadnode.detection.probe.suspectnode.interval.ms,300,Interval time in milliseconds for probing suspect node behavior.

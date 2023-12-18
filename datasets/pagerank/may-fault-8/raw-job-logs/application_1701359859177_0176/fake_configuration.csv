@@ -1,0 +1,29 @@
+,name,value,description
+0,hadoop.security.groups.cache.warn.after.ms,371973238,"If looking up a single user to group takes longer than this amount of
+    milliseconds, we will log a warning message."
+1,mapreduce.map.skip.maxrecords,0,"The number of acceptable skip records surrounding the bad
+    record PER bad record in mapper. The number includes the bad record as well.
+    To turn the feature of detection/skipping of bad records off, set the
+    value to 0.
+    The framework tries to narrow down the skipped range by retrying
+    until this threshold is met OR all attempts get exhausted for this task.
+    Set the value to Long.MAX_VALUE to indicate that framework need not try to
+    narrow down. Whatever records(depends on application) get skipped are
+    acceptable."
+2,ftp.blocksize,67108864,Block size
+3,yarn.nodemanager.default-container-executor.log-dirs.permissions,710,
+4,dfs.client.mmap.cache.timeout.ms,3600000,"The minimum length of time that we will keep an mmap entry in the cache
+    between uses.  If an entry is in the cache longer than this, and nobody
+    uses it, it will be removed by a background thread."
+5,dfs.namenode.edekcacheloader.interval.ms,1000,"When KeyProvider is configured, the interval time of warming
+    up edek cache on NN starts up / becomes active. All edeks will be loaded
+    from KMS into provider cache. The edek cache loader will try to warm up the
+    cache until succeed or NN leaves active state."
+6,dfs.namenode.top.window.num.buckets,10,Number of buckets in the rolling window implementation of nntop
+7,hadoop.security.kms.client.timeout,60,"Sets value for KMS client connection timeout, and the read timeout
+    to KMS servers."
+8,yarn.timeline-service.client.retry-interval-ms,1000,
+9,dfs.namenode.heartbeat.recheck-interval,300000,"This time decides the interval to check for expired datanodes.
+    With this value and dfs.heartbeat.interval, the interval of
+    deciding the datanode is stale or not is also calculated.
+    The unit of this configuration is millisecond."

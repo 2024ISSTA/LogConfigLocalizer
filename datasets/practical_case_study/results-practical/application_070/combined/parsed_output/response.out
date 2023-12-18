@@ -1,0 +1,14 @@
+name:hadoop.security.group.mapping.ldap.search.group.hierarchy.levels
+value:1
+relevant log:1-Error java.lang.NullPointerException at org.apache.hadoop.security.LdapGroupsMapping.goUpGroupHierarchy(LdapGroupsMapping.java:612)
+explanation:The NullPointerException at LdapGroupsMapping.goUpGroupHierarchy indicates that there might be an issue with the LDAP group hierarchy mapping. The configuration option 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' is directly related to this functionality and could be the root cause of the error.
+
+name:yarn.resourcemanager.activities-manager.app-activities.ttl-ms
+value:600000
+relevant log:<missing>
+explanation:This configuration option has a missing description, which might cause errors if not properly set. However, there is no direct evidence in the provided log content linking this configuration to the error.
+
+name:ipc.[port_number].weighted-cost.handler
+value:1
+relevant log:<missing>
+explanation:This configuration option has a value set, but there is no direct evidence in the provided log content linking this configuration to the error. It is included here for completeness, but it is less likely to be the root cause compared to the 'hadoop.security.group.mapping.ldap.search.group.hierarchy.levels' configuration.

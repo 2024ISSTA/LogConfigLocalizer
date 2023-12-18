@@ -1,0 +1,17 @@
+name:yarn.nodemanager.delete.thread-count
+value:-649821290
+relevant log:2-1-INFO	Diagnostics report from attempt_1701312551309_0142_m_000002_0: [2023-11-30 12:42:49.608]Exception from container-launch.Container id: container_1701312551309_0142_01_000009
+Exit code: 1INFO	1 failures on node cf6e5ca2712c
+explanation: The negative value for the thread count is invalid and could be causing the container launch exception.
+
+name:dfs.datanode.data.transfer.bandwidthPerSec
+value:0
+relevant log:2-1-INFO	Diagnostics report from attempt_1701312551309_0142_m_000002_0: [2023-11-30 12:42:49.608]Exception from container-launch.Container id: container_1701312551309_0142_01_000009
+Exit code: 1INFO	1 failures on node cf6e5ca2712c
+explanation: The bandwidth value is set to zero, which means there is no limit on the data transfer. This could potentially overload the system and cause failures.
+
+name:yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts
+value:3
+relevant log:2-1-INFO	Diagnostics report from attempt_1701312551309_0142_m_000002_0: [2023-11-30 12:42:49.608]Exception from container-launch.Container id: container_1701312551309_0142_01_000009
+Exit code: 1INFO	1 failures on node cf6e5ca2712c
+explanation: The number of client retries on socket timeouts to the AM is set to 3. This could be causing the system to prematurely give up on establishing a connection, leading to failures.

@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.placement-constraints.algorithm.pool-size
+value:1
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008
+explanation: The log indicates that the system is speculating a task, which might be related to the resource manager's placement constraints. The pool size of 1 might be too small, causing the system to speculate tasks.
+
+name:mapreduce.jobhistory.move.thread-count
+value:3
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008
+explanation: The log indicates that the system is speculating a task, which might be related to the job history move thread count. The value of 3 might be too low, causing the system to speculate tasks.
+
+name:mapreduce.job.cache.limit.max-resources-mb
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008
+explanation: The log indicates that the system is speculating a task, which might be related to the maximum size a map reduce job is allowed to submit for localization. The value of 0 means the limit is ignored, which might cause the system to speculate tasks.

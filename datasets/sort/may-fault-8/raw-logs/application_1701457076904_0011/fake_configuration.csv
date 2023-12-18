@@ -1,0 +1,17 @@
+,name,value,description
+0,dfs.qjournal.accept-recovery.timeout.ms,,"Quorum timeout in milliseconds during accept phase of
+    recovery/synchronization for a specific segment."
+1,yarn.sharedcache.uploader.server.thread-count,50,
+2,yarn.scheduler.maximum-allocation-vcores,4,
+3,mapreduce.job.end-notification.max.retry.interval,5000,"The maximum amount of time (in milliseconds) to wait before
+     retrying job end notification. Cluster administrators can set this to
+     limit how long the Application Master waits before exiting. Must be marked
+     as final to prevent users from overriding this."
+4,yarn.dispatcher.print-events-info.threshold,5000,
+5,dfs.client.retry.times.get-last-block-length,3,Number of retries for calls to fetchLocatedBlocksAndGetLastBlockLength().
+6,yarn.sharedcache.cleaner.resource-sleep-ms,0,
+7,yarn.client.nodemanager-connect.retry-interval-ms,10000,
+8,dfs.journalnode.sync.interval,120000,"Time interval, in milliseconds, between two Journal Node syncs.
+    This configuration takes effect only if the journalnode sync is enabled
+    by setting the configuration parameter dfs.journalnode.enable.sync to true."
+9,yarn.client.failover-retries,0,

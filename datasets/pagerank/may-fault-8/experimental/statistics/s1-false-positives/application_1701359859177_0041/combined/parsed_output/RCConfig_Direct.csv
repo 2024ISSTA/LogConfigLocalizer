@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+dfs.datanode.ec.reconstruction.threads,JeYV6,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009,property-item-hit	ec
+yarn.resourcemanager.zk-delegation-token-node.split-index,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009,value-hit
+yarn.nodemanager.localizer.client.thread-count,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0042_r_000009,value-hit

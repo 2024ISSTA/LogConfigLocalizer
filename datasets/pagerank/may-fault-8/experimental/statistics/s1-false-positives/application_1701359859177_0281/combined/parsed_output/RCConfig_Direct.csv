@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+yarn.app.mapreduce.client-am.ipc.max-retries,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0281_r_000009,value-hit
+mapreduce.jobhistory.move.thread-count,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0281_r_000009,value-hit
+dfs.client.short.circuit.num,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0281_r_000009,value-hit
+mapreduce.job.speculative.minimum-allowed-tasks,10,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0281_r_000009,property-item-hit	speculative

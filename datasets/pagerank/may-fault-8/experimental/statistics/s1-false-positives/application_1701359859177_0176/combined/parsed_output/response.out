@@ -1,0 +1,14 @@
+name:yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size
+value:10
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0177_r_000008
+explanation: The log indicates that a speculative task is being launched. The configuration option 'yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size' determines the initial size of the thread pool to launch containers in the app master. If this value is too low, it may cause delays or failures in launching speculative tasks.
+
+name:mapreduce.job.maxtaskfailures.per.tracker
+value:3
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0177_r_000008
+explanation: The log indicates that a speculative task is being launched. The configuration option 'mapreduce.job.maxtaskfailures.per.tracker' determines the number of task-failures on a node manager of a given job after which new tasks of that job aren't assigned to it. If this value is too low, it may cause premature speculation of tasks.
+
+name:yarn.nodemanager.amrmproxy.client.thread-count
+value:25
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0177_r_000008
+explanation: The log indicates that a speculative task is being launched. The configuration option 'yarn.nodemanager.amrmproxy.client.thread-count' determines the number of threads for the AMRMProxy client. If this value is too low, it may cause delays or failures in launching speculative tasks.

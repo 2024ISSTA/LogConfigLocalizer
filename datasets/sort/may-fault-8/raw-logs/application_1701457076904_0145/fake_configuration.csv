@@ -1,0 +1,24 @@
+,name,value,description
+0,fs.s3a.connection.timeout,0.023149252,Socket connection timeout in milliseconds.
+1,dfs.namenode.edekcacheloader.initial.delay.ms,3000,"When KeyProvider is configured, the time delayed until the first
+    attempt to warm up edek cache on NN start up / become active."
+2,dfs.balancer.block-move.timeout,0,"Maximum amount of time in milliseconds for a block to move. If this is set
+    greater than 0, Balancer will stop waiting for a block move completion
+    after this time. In typical clusters, a 3 to 5 minute timeout is reasonable.
+    If timeout happens to a large proportion of block moves, this needs to be
+    increased. It could also be that too much work is dispatched and many nodes
+    are constantly exceeding the bandwidth limit as a result. In that case,
+    other balancer parameters might need to be adjusted.
+    It is disabled (0) by default."
+3,dfs.client-write-packet-size,65536,Packet size for clients to write
+4,ftp.stream-buffer-size,4096,"The size of buffer to stream files.
+  The size of this buffer should probably be a multiple of hardware
+  page size (4096 on Intel x86), and it determines how much data is
+  buffered during read and write operations."
+5,yarn.resourcemanager.activities-manager.app-activities.ttl-ms,600000,
+6,yarn.resourcemanager.admin.client.thread-count,1,
+7,yarn.nodemanager.container-executor.exit-code-file.timeout-ms,2000,
+8,yarn.sharedcache.uploader.server.thread-count,50,
+9,hadoop.security.group.mapping.ldap.num.attempts,3,"This property is the number of attempts to be made for LDAP operations.
+    If this limit is exceeded, LdapGroupsMapping will return an empty
+    group list."

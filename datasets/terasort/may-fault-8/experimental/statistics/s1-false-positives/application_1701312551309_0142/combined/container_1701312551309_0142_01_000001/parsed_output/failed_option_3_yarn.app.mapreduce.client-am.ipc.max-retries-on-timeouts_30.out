@@ -1,0 +1,2 @@
+yarn.app.mapreduce.client-am.ipc.max-retries-on-timeouts	3	INFO	Diagnostics report from attempt_1701312551309_0142_m_000002_0: [2023-11-30 12:42:49.608]Exception from container-launch.Container id: container_1701312551309_0142_01_000009
+Exit code: 1	30

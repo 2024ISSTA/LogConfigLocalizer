@@ -1,0 +1,19 @@
+,name,value,description
+0,dfs.client.retry.max.attempts,,Max retry attempts for DFSClient talking to namenodes.
+1,yarn.resourcemanager.scheduler.client.thread-count,50,
+2,yarn.nodemanager.localizer.client.thread-count,5,
+3,mapreduce.shuffle.listen.queue.size,128,The length of the shuffle server listen queue.
+4,dfs.datanode.min.outlier.detection.disks,5,Minimum number of disks to run outlier detection.
+5,yarn.resourcemanager.nm-container-queuing.min-queue-length,5,
+6,mapreduce.job.local-fs.single-disk-limit.check.interval-ms,5000,Interval of disk limit check to run in ms.
+7,dfs.datanode.slowpeer.low.threshold.ms,5,Threshold in milliseconds below which a DataNode is definitely not slow.
+8,dfs.qjournal.write-txns.timeout.ms,20000,"Write timeout in milliseconds when writing to a quorum of remote
+    journals."
+9,dfs.namenode.edits.dir.minimum,1,"dfs.namenode.edits.dir includes both required directories
+    (specified by dfs.namenode.edits.dir.required) and optional directories.
+
+    The number of usable optional directories must be greater than or equal
+    to this property.  If the number of usable optional directories falls
+    below dfs.namenode.edits.dir.minimum, HDFS will issue an error.
+
+    This property defaults to 1."

@@ -1,0 +1,15 @@
+,name,value,description
+0,yarn.resourcemanager.delayed.delegation-token.removal-interval-ms,-2103858618,<missing>
+1,dfs.qjournal.queued-edits.limit.mb,10,Queue size in MB for quorum journal edits.
+2,yarn.resourcemanager.nm-container-queuing.max-queue-wait-time-ms,100,
+3,ipc.client.connect.timeout,20000,"Indicates the number of milliseconds a client will wait for the
+               socket to establish a server connection."
+4,fs.df.interval,60000,Disk usage statistics refresh interval in msec.
+5,yarn.resourcemanager.nm-tokens.master-key-rolling-interval-secs,86400,
+6,dfs.ha.zkfc.nn.http.timeout.ms,20000,"The HTTP connection and read timeout value (unit is ms ) when DFS ZKFC
+    tries to get local NN thread dump after local NN becomes
+    SERVICE_NOT_RESPONDING or SERVICE_UNHEALTHY.
+    If it is set to zero, DFS ZKFC won't get local NN thread dump."
+7,yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs,86400,
+8,dfs.datanode.lazywriter.interval.sec,60,Interval in seconds for Datanodes for lazy persist writes.
+9,dfs.namenode.blockreport.max.lock.hold.time,4,The BlockReportProcessingThread max write lock hold time in ms.

@@ -1,0 +1,8 @@
+name,value,relevant log,explanation
+mapred.compress.map.output,true,INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000,property-item-hit	mapred
+mapred.compress.map.output,true,INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000,property-item-hit	map
+mapreduce.task.userlog.limit.kb,0,INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000,value-hit
+dfs.namenode.file.close.num-committed-allowed,0,INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000,value-hit
+yarn.nodemanager.aux-services.manifest.reload-ms,0,INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000,value-hit
+mapred.compress.map.output,true,INFO       org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null,property-item-hit	mapred
+mapred.compress.map.output,true,INFO       org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null,property-item-hit	map

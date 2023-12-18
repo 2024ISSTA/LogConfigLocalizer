@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+mapred.local.dir,<missing>,ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test,property-item-hit	mapred
+hadoop.security.kms.client.encrypted.key.cache.size,500,ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test,property-item-hit	security
+seq.io.sort.mb,100,ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test,property-item-hit	io

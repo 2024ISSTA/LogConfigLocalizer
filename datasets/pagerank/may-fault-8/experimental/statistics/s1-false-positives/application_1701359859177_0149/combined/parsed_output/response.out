@@ -1,0 +1,14 @@
+name:io.bytes.per.checksum
+value:<missing>
+relevant log:1-DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010
+explanation:The configuration for the number of bytes per checksum is missing. This could cause issues with data integrity checks during task execution.
+
+name:yarn.sharedcache.cleaner.resource-sleep-ms
+value:0
+relevant log:1-DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010
+explanation:The value for the yarn.sharedcache.cleaner.resource-sleep-ms is set to 0. This could cause the cleaner to continuously run without any sleep, potentially causing resource exhaustion.
+
+name:dfs.namenode.snapshot.skiplist.max.levels
+value:0
+relevant log:1-DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010
+explanation:The dfs.namenode.snapshot.skiplist.max.levels is set to 0. This means a linear list will be used to store the directory snapshot diffs, which could potentially cause performance issues.

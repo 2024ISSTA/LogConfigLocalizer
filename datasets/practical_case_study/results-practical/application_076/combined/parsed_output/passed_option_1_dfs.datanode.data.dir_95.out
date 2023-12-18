@@ -1,0 +1,1 @@
+dfs.datanode.data.dir	/grid/a/dfs-data/bs	WARN   org.apache.hadoop.hdfs.server.common.Util: Path /grid/a/dfs-data/bs should be specified as a URI in configuration files. Please update hdfs configuration.	95

@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+hadoop.registry.zk.retry.times,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0139_r_000009,value-hit
+mapreduce.input.lineinputformat.linespermap,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0139_r_000009,value-hit
+yarn.resourcemanager.placement-constraints.scheduler.pool-size,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0139_r_000009,value-hit
+ha.health-monitor.rpc.connect.max.retries,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0139_r_000009,value-hit

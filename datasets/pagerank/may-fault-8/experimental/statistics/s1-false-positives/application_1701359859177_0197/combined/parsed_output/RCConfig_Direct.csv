@@ -1,0 +1,3 @@
+name,value,relevant log,explanation
+dfs.datanode.max.nodes.to.report,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0197_r_000008,value-hit
+dfs.namenode.missing.checkpoint.periods.before.shutdown,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0197_r_000008,value-hit

@@ -1,0 +1,2 @@
+mapreduce.task.userlog.limit.kb	0	Error java.lang.NegativeArraySizeException: -4096
+        	95

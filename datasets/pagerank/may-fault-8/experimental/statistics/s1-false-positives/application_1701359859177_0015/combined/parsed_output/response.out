@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.container.liveness-monitor.interval-ms
+value:<missing>
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009
+explanation:The missing value for the yarn.resourcemanager.container.liveness-monitor.interval-ms configuration might be causing the speculative task execution. This configuration is responsible for the interval at which the ResourceManager checks for any containers that need to be killed or rescheduled due to node failures or resource over-allocation. If this value is not set, it could lead to unexpected task speculation.
+
+name:fs.s3a.connection.request.timeout
+value:0.0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009
+explanation:The fs.s3a.connection.request.timeout configuration is set to 0.0, which means there is no timeout for HTTP requests to the AWS service. This could potentially lead to tasks hanging indefinitely if there are issues with the AWS service, leading to speculative task execution.
+
+name:yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size
+value:10.0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009
+explanation:The yarn.app.mapreduce.am.containerlauncher.threadpool-initial-size configuration is set to 10.0. This configuration determines the initial size of the thread pool used to launch containers in the application master. If this value is too low, it could lead to delays in task execution, which could in turn trigger speculative task execution.

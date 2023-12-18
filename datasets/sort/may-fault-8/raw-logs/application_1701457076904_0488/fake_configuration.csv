@@ -1,0 +1,23 @@
+,name,value,description
+0,fs.s3a.threads.keepalivetime,AFQ7W,"Number of seconds a thread can be idle before being
+    terminated."
+1,yarn.resourcemanager.delegation-token.max-conf-size-bytes,12800,
+2,dfs.namenode.full.block.report.lease.length.ms,300000,"The number of milliseconds that the NameNode will wait before invalidating
+    a full block report lease.  This prevents a crashed DataNode from
+    permanently using up a full block report lease."
+3,dfs.storage.policy.satisfier.recheck.timeout.millis,60000,"Blocks storage movements monitor re-check interval in milliseconds.
+    This check will verify whether any blocks storage movement results arrived from DN
+    and also verify if any of file blocks movements not at all reported to DN
+    since dfs.storage.policy.satisfier.self.retry.timeout.
+    The default value is 1 * 60 * 1000 (1 mins)"
+4,dfs.namenode.available-space-rack-fault-tolerant-block-placement-policy.balanced-space-tolerance,5,"Only used when the dfs.block.replicator.classname is set to
+    org.apache.hadoop.hdfs.server.blockmanagement.AvailableSpaceRackFaultTolerantBlockPlacementPolicy.
+    Special value between 0 and 20, inclusive. if the value is set beyond the scope,
+    this value will be set as 5 by default, Increases tolerance of
+    placing blocks on Datanodes with similar disk space used."
+5,yarn.timeline-service.flowname.max-size,0,
+6,yarn.resourcemanager.max-completed-applications,1000,
+7,ipc.client.idlethreshold,4000,"Defines the threshold number of connections after which
+               connections will be inspected for idleness."
+8,yarn.timeline-service.entity-group-fs-store.retain-seconds,604800,
+9,yarn.sharedcache.client-server.thread-count,50,

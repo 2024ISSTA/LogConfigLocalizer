@@ -1,0 +1,2 @@
+anomaly_degree,content
+0.2,"WARN   org.apache.hadoop.hdfs.server.common.Util: Path /grid/a/dfs-data/bs should be specified as a URI in configuration files. Please update hdfs configuration."

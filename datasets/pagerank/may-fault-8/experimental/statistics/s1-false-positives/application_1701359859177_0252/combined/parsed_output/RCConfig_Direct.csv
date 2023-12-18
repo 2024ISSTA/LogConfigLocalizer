@@ -1,0 +1,7 @@
+name,value,relevant log,explanation
+dfs.namenode.missing.checkpoint.periods.before.shutdown,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit
+dfs.client.max.block.acquire.failures,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit
+yarn.nodemanager.runtime.linux.docker.userremapping-gid-threshold,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit
+ipc.server.max.connections,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit
+mapreduce.job.reduces,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit
+yarn.resourcemanager.zk-appid-node.split-index,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0253_r_000009,value-hit

@@ -1,0 +1,24 @@
+anomaly_degree,content
+0.30000000000000004,"WARN	AsyncDispatcher thread interruptedjava.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(AbstractQueuedSynchronizer.java:1261)
+	at java.base/java.util.concurrent.locks.ReentrantLock.lockInterruptibly(ReentrantLock.java:317)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.put(LinkedBlockingQueue.java:330)
+	at org.apache.hadoop.yarn.event.AsyncDispatcher$GenericEventHandler.handle(AsyncDispatcher.java:331)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.processFinishedContainer(RMContainerAllocator.java:908)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.getResources(RMContainerAllocator.java:889)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.heartbeat(RMContainerAllocator.java:286)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator$AllocatorRunnable.run(RMCommunicator.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:829)"
+0.4,"ERROR	ERROR IN CONTACTING RM.org.apache.hadoop.yarn.exceptions.YarnRuntimeException: java.lang.InterruptedException
+	at org.apache.hadoop.yarn.event.AsyncDispatcher$GenericEventHandler.handle(AsyncDispatcher.java:339)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.processFinishedContainer(RMContainerAllocator.java:908)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.getResources(RMContainerAllocator.java:889)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator.heartbeat(RMContainerAllocator.java:286)
+	at org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator$AllocatorRunnable.run(RMCommunicator.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireInterruptibly(AbstractQueuedSynchronizer.java:1261)
+	at java.base/java.util.concurrent.locks.ReentrantLock.lockInterruptibly(ReentrantLock.java:317)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.put(LinkedBlockingQueue.java:330)
+	at org.apache.hadoop.yarn.event.AsyncDispatcher$GenericEventHandler.handle(AsyncDispatcher.java:331)
+	... 5 more"

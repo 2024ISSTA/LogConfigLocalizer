@@ -1,0 +1,13 @@
+anomaly_degree,content
+0.2,"Error java.lang.OutOfMemoryError: Java heap space
+        at java.base/java.io.BufferedOutputStream.<init>(BufferedOutputStream.java:75)
+        at org.apache.hadoop.fs.statistics.BufferedIOStatisticsOutputStream.<init>(BufferedIOStatisticsOutputSt
+ream.java:78)
+        at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:428)
+        at org.apache.hadoop.fs.RawLocalFileSystem.create(RawLocalFileSystem.java:413)
+        at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:1175)
+        at org.apache.hadoop.fs.contract.ContractTestUtils.writeDataset(ContractTestUtils.java:183)
+        at org.apache.hadoop.fs.contract.ContractTestUtils.writeDataset(ContractTestUtils.java:152)
+        at org.apache.hadoop.fs.contract.AbstractContractRenameTest.expectRenameUnderFileFails(AbstractContract
+RenameTest.java:335)
+..."

@@ -1,0 +1,20 @@
+,name,value,description
+0,yarn.resourcemanager.delayed.delegation-token.removal-interval-ms,-2103858618,
+1,dfs.blockreport.incremental.intervalMsec,0,"If set to a positive integer, the value in ms to wait between sending
+    incremental block reports from the Datanode to the Namenode."
+2,yarn.resourcemanager.container.liveness-monitor.interval-ms,600000,
+3,yarn.resourcemanager.rm.container-allocation.expiry-interval-ms,600000,
+4,dfs.client.block.write.locateFollowingBlock.max.delay.ms,60000,The maximum delay (unit is ms) before retrying locateFollowingBlock.
+5,hadoop.zk.retry-interval-ms,1000,Retry interval in milliseconds when connecting to ZooKeeper.
+6,dfs.blockreport.split.threshold,1000000,"If the number of blocks on the DataNode is below this
+    threshold then it will send block reports for all Storage Directories
+    in a single message.
+
+    If the number of blocks exceeds this threshold then the DataNode will
+    send block reports for each Storage Directory in separate messages.
+
+    Set to zero to always split."
+7,dfs.datanode.ec.reconstruction.stripedread.buffer.size,65536,Datanode striped read buffer size.
+8,dfs.client.deadnode.detection.probe.suspectnode.interval.ms,300,Interval time in milliseconds for probing suspect node behavior.
+9,fs.s3a.paging.maximum,5000,"How many keys to request from S3 when doing
+     directory listings at a time."

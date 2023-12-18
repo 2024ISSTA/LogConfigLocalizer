@@ -1,0 +1,10 @@
+anomaly_degree,content
+0.2,"Error java.lang.NullPointerException
+    at org.apache.hadoop.crypto.CryptoOutputStream.<init>(CryptoOutputStream.java:106)
+    at org.apache.hadoop.fs.crypto.CryptoFSDataOutputStream.<init>(CryptoFSDataOutputStream.java:38)
+    at org.apache.hadoop.mapreduce.CryptoUtils.wrapIfNecessary(CryptoUtils.java:141)
+    at org.apache.hadoop.mapreduce.security.IntermediateEncryptedStream.wrapIfNecessary(IntermediateEncryptedStream.java:46)
+    at org.apache.hadoop.mapreduce.task.reduce.OnDiskMapOutput.<init>(OnDiskMapOutput.java:87)
+    at org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl.reserve(MergeManagerImpl.java:274)
+    at org.apache.hadoop.mapreduce.task.reduce.TestMergeManager.verifyReservedMapOutputType(TestMergeManager.java:309)
+    at org.apache.hadoop.mapreduce.task.reduce.TestMergeManager.testLargeMemoryLimits(TestMergeManager.java:303)"

@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.activities-manager.app-activities.ttl-ms
+value:xPdqN
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0164_r_000009
+explanation:The value of this configuration option should be a number representing the time-to-live in milliseconds for application activities. The current value "xPdqN" is not a valid number, which may cause errors in task speculation.
+
+name:yarn.timeline-service.client.max-retries
+value:30
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0164_r_000009
+explanation:The value of this configuration option indicates the maximum number of retries for the timeline service client. If the number of retries exceeds this value, it may cause task speculation to fail.
+
+name:dfs.client.failover.connection.retries
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0164_r_000009
+explanation:The value of this configuration option indicates the number of retries a failover IPC client will make to establish a server connection. If the value is set to 0, it means no retries will be made, which may cause connection failures and affect task speculation.

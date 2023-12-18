@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
+value:-2103858618
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0040_m_000009
+explanation: The negative value for the removal interval might cause unexpected behavior in the resource manager, leading to the speculation of tasks.
+
+name:dfs.qjournal.queued-edits.limit.mb
+value:10
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0040_m_000009
+explanation: A low limit for the queue size of quorum journal edits might cause tasks to be speculated due to slow processing of edits.
+
+name:yarn.resourcemanager.nm-container-queuing.max-queue-wait-time-ms
+value:100
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0040_m_000009
+explanation: A low maximum queue wait time might cause tasks to be speculated due to insufficient time for container queuing.

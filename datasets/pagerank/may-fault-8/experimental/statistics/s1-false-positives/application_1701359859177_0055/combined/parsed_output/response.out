@@ -1,0 +1,14 @@
+name:mapreduce.am.max-attempts
+value:2
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0055_r_000007
+explanation:The log indicates that a task is being speculated, which could be due to the application master (AM) failing and retrying. The configuration option 'mapreduce.am.max-attempts' controls the maximum number of application attempts, which could be the root cause if it's set too low.
+
+name:yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms
+value:10
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0055_r_000007
+explanation:The log indicates that a task is being speculated, which could be due to the task waiting in the queue for too short a time before being speculated. The configuration option 'yarn.resourcemanager.nm-container-queuing.min-queue-wait-time-ms' controls the minimum queue wait time, which could be the root cause if it's set too low.
+
+name:dfs.namenode.get-blocks.max-qps
+value:20
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0055_r_000007
+explanation:The log indicates that a task is being speculated, which could be due to the maximum number of getBlocks RPCs data movement utilities can make to a NameNode per second being too low. The configuration option 'dfs.namenode.get-blocks.max-qps' controls this, which could be the root cause if it's set too low.

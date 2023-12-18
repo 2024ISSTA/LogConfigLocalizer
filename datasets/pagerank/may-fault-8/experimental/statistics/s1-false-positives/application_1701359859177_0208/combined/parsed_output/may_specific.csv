@@ -1,0 +1,5 @@
+0,1
+11ab4b15,node0 Scavenging every 660000ms
+da450fb8,DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_<*>_<*>_m_<*>
+1c4b924f,Scheduling a redundant attempt for task task_<*>_<*>_m_<*>
+41351536,Issuing kill to other attempt attempt_<*>_<*>_m_<*>_<*>

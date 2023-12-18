@@ -1,0 +1,10 @@
+anomaly_degree,content
+0.2,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+at org.apache.hadoop.conf.Configuration.getFile(Configuration.java:282)
+at org.apache.hadoop.mapred.JobConf.getLocalFile(JobConf.java:127)
+at org.apache.hadoop.mapred.TaskTracker$TaskInProgress.localizeTask(TaskTracker.java:391)
+at org.apache.hadoop.mapred.TaskTracker$TaskInProgress.<init>(TaskTracker.java:383)
+at org.apache.hadoop.mapred.TaskTracker.offerService(TaskTracker.java:270)
+at org.apache.hadoop.mapred.TaskTracker.run(TaskTracker.java:336)
+at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:756)"

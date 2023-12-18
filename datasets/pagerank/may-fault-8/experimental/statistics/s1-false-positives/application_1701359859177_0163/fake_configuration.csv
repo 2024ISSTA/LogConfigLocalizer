@@ -1,0 +1,21 @@
+,name,value,description
+0,yarn.resourcemanager.activities-manager.app-activities.ttl-ms,xPdqN,<missing>
+1,yarn.timeline-service.client.max-retries,30,
+2,httpfs.buffer.size,4096,The size buffer to be used when creating or opening httpfs filesystem IO stream.
+3,yarn.timeline-service.timeline-client.number-of-async-entities-to-merge,10,
+4,yarn.nodemanager.aux-services.manifest.reload-ms,0,
+5,yarn.resourcemanager.history-writer.multi-threaded-dispatcher.pool-size,10,
+6,dfs.client.failover.connection.retries,0,"Expert only. Indicates the number of retries a failover IPC client
+    will make to establish a server connection."
+7,fs.trash.interval,0,"Number of minutes after which the checkpoint
+  gets deleted.  If zero, the trash feature is disabled.
+  This option may be configured both on the server and the
+  client. If trash is disabled server side then the client
+  side configuration is checked. If trash is enabled on the
+  server side then the value configured on the server is
+  used and the client configuration value is ignored."
+8,dfs.namenode.checkpoint.txns,1000000,"The Secondary NameNode or CheckpointNode will create a checkpoint
+  of the namespace every 'dfs.namenode.checkpoint.txns' transactions, regardless
+  of whether 'dfs.namenode.checkpoint.period' has expired."
+9,dfs.encrypt.data.transfer.cipher.key.bitlength,128,"The key bitlength negotiated by dfsclient and datanode for encryption.
+    This value may be set to either 128, 192 or 256."

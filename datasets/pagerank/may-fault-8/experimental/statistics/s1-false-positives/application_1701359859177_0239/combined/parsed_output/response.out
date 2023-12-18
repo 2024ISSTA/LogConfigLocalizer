@@ -1,0 +1,14 @@
+name:io.bytes.per.checksum
+value:<missing>
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0239_m_000010
+explanation:The configuration for the number of bytes per checksum is missing. This could potentially cause issues with data integrity checks during task execution.
+
+name:yarn.resourcemanager.fs.state-store.retry-interval-ms
+value:1000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0239_m_000010
+explanation:The retry interval for the ResourceManager's filesystem state store is set to 1000ms. If the state store is under heavy load or experiencing latency, this could lead to frequent retry attempts and impact task scheduling.
+
+name:yarn.resourcemanager.nm-container-queuing.min-queue-length
+value:5
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0239_m_000010
+explanation:The minimum queue length for container queuing in the ResourceManager is set to 5. If there are more tasks being submitted than can be handled, this could lead to tasks being queued and potentially speculated.

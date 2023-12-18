@@ -1,0 +1,14 @@
+name:yarn.app.mapreduce.am.job.task.listener.thread-count
+value:30
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008
+explanation: The log indicates that a task is being speculated, which could be due to the task taking longer than expected. This could be related to the number of threads used to handle RPC calls in the MR AppMaster from remote tasks. If the number of threads is not sufficient, it could lead to delays in task execution.
+
+name:ipc.server.max.connections
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008
+explanation: The log indicates that a task is being speculated, which could be due to the task taking longer than expected. This could be related to the maximum number of concurrent connections a server is allowed to accept. If this limit is exceeded, incoming connections will first fill the listen queue and then may go to an OS-specific listen overflow queue. The client may fail or timeout, but the server can avoid running out of file descriptors using this feature. 0 means no limit.
+
+name:yarn.nodemanager.runtime.linux.docker.stop.grace-period
+value:10
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0095_r_000008
+explanation: The log indicates that a task is being speculated, which could be due to the task taking longer than expected. This could be related to the grace period for stopping docker containers in the node manager. If the grace period is too short, it could lead to abrupt termination of tasks, causing them to be speculated.

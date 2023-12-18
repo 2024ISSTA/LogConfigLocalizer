@@ -1,0 +1,2 @@
+anomaly_degree,content
+0.2,"Could not find or load main class org.apache.hadoop.mapreduce.v2.app.MRAppMaster error"

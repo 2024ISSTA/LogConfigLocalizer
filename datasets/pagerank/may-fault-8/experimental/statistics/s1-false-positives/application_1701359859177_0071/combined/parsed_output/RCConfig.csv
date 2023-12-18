@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+io.bytes.per.checksum,<missing>,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,The missing value for 'io.bytes.per.checksum' could be causing issues with the task speculation as it is related to the handling of data.
+dfs.edit.log.transfer.bandwidthPerSec,0,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,"The value of 'dfs.edit.log.transfer.bandwidthPerSec' is set to 0, which means throttling is disabled. This could potentially cause issues with the transfer of edit logs between journal nodes for syncing."
+dfs.client.block.write.retries,3,1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,"The value of 'dfs.client.block.write.retries' is set to 3. If the system is experiencing issues with writing blocks to the data nodes, this could be a potential cause."

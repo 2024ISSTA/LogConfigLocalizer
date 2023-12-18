@@ -1,0 +1,14 @@
+name:yarn.router.pipeline.cache-max-size
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009
+explanation:The value of this configuration is set to 0, which might cause issues as it means no cache is available for the yarn router pipeline. This could potentially lead to performance issues or task failures.
+
+name:mapreduce.task.io.sort.factor
+value:10
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009
+explanation:The value of this configuration is set to 10, which means that only 10 streams can be merged at once while sorting files. This could potentially limit the performance of the MapReduce task, especially if there are more than 10 streams to be merged.
+
+name:yarn.app.mapreduce.am.job.committer.commit-window
+value:10000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009
+explanation:The value of this configuration is set to 10000 milliseconds, which defines a time window for output commit operations. If the ResourceManager (RM) contact does not occur within this window, the ApplicationMaster (AM) will not allow output commits until contact with the RM has been re-established. This could potentially lead to delays or failures in task completion.

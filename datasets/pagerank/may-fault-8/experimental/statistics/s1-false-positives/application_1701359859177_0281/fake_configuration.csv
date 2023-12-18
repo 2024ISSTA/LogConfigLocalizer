@@ -1,0 +1,24 @@
+,name,value,description
+0,dfs.qjournal.http.open.timeout.ms,0.67180085,"Timeout in milliseconds when open a new HTTP connection to remote
+    journals."
+1,yarn.app.mapreduce.client-am.ipc.max-retries,3,"The number of client retries to the AM - before reconnecting
+    to the RM to fetch Application Status.
+    In other words, it is the ipc.client.connect.max.retries to be used during
+    reconnecting to the RM and fetching Application Status."
+2,io.map.index.interval,128,"MapFile consist of two files - data file (tuples) and index file
+    (keys). For every io.map.index.interval records written in the
+    data file, an entry (record-key, data-file-position) is written
+    in the index file. This is to allow for doing binary search later
+    within the index file to look up records by their keys and get their
+    closest positions in the data file."
+3,dfs.qjournal.queued-edits.limit.mb,10,Queue size in MB for quorum journal edits.
+4,mapreduce.jobhistory.move.thread-count,3,The number of threads used to move files.
+5,yarn.nodemanager.container-metrics.unregister-delay-ms,10000,
+6,dfs.client.short.circuit.num,1,"Number of short-circuit caches. This setting should
+    be in the range 1 - 5. Lower values will result in lower CPU consumption; higher
+    values may speed up massive parallel reading files."
+7,yarn.log-aggregation-status.time-out.ms,600000,
+8,dfs.namenode.snapshot.skiplist.interval,10,"The interval after which the skip levels will be formed in the skip list
+    for storing directory snapshot diffs. By default, value is set to 10."
+9,mapreduce.job.speculative.minimum-allowed-tasks,10,"The minimum allowed tasks that
+  can be speculatively re-executed at any time."

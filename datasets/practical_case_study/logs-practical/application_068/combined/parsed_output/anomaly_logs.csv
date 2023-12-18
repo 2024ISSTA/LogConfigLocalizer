@@ -1,0 +1,9 @@
+anomaly_degree,content
+0.2,"Error java.io.IOException: Problem starting http server
+        ...
+Caused by: java.lang.NullPointerException: config
+    at org.apache.hadoop.thirdparty.com.google.common.base.Preconditions.checkNotNull(Preconditions.java:899)
+    at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.registerSink(MetricsSystemImpl.java:298)
+    at org.apache.hadoop.metrics2.impl.MetricsSystemImpl.register(MetricsSystemImpl.java:277)
+    at org.apache.hadoop.http.HttpServer2.start(HttpServer2.java:1279)
+    ... 34 more"

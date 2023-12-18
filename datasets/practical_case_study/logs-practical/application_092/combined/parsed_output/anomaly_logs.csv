@@ -1,0 +1,5 @@
+anomaly_degree,content
+0.2,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)"

@@ -1,0 +1,14 @@
+name:hadoop.security.authorization
+value:true
+relevant log:1-Error java.lang.NullPointerException at org.apache.hadoop.ha.ZKFailoverController.doRun(ZKFailoverController.java:258)
+explanation: The NullPointerException could be caused by the hadoop.security.authorization configuration. If the authorization is not properly set, it may lead to null objects that cause the exception.
+
+name:dfs.namenode.read-lock-reporting-threshold-ms
+value:5000
+relevant log:1-Error java.lang.NullPointerException at org.apache.hadoop.ha.ZKFailoverController.doRun(ZKFailoverController.java:258)
+explanation: The read lock on the namenode might be held for too long, causing the NullPointerException. The configuration dfs.namenode.read-lock-reporting-threshold-ms controls the threshold for this lock.
+
+name:dfs.datanode.lock-reporting-threshold-ms
+value:300
+relevant log:1-Error java.lang.NullPointerException at org.apache.hadoop.ha.ZKFailoverController.doRun(ZKFailoverController.java:258)
+explanation: The NullPointerException could be caused by a thread waiting too long to obtain a lock or holding a lock for too long. The configuration dfs.datanode.lock-reporting-threshold-ms controls the threshold for this.

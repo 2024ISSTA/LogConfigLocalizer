@@ -1,0 +1,2 @@
+anomaly_degree,content
+0.7000000000000001,"ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test"

@@ -1,0 +1,18 @@
+,name,value,description
+0,fs.default.name,hdfs://0.0.0.0:19000,
+1,yarn.log-aggregation-status.time-out.ms,600000,
+2,yarn.sharedcache.cleaner.period-mins,1440,
+3,mapreduce.reduce.shuffle.parallelcopies,5,"The default number of parallel transfers run by reduce
+  during the copy(shuffle) phase."
+4,nfs.server.port,2049,Specify the port number used by Hadoop NFS.
+5,yarn.timeline-service.handler-thread-count,10,
+6,dfs.namenode.decommission.blocks.per.interval,500000,"The approximate number of blocks to process per decommission
+    or maintenance interval, as defined in dfs.namenode.decommission.interval."
+7,yarn.nodemanager.container-log-monitor.interval-ms,60000,
+8,hadoop.security.group.mapping.ldap.search.group.hierarchy.levels,0,"The number of levels to go up the group hierarchy when determining
+    which groups a user is part of. 0 Will represent checking just the
+    group that the user belongs to.  Each additional level will raise the
+    time it takes to execute a query by at most
+    hadoop.security.group.mapping.ldap.directory.search.timeout.
+    The default will usually be appropriate for all LDAP systems."
+9,yarn.nodemanager.node-labels.provider.fetch-timeout-ms,1200000,

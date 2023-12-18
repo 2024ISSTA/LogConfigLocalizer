@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+fs.s3a.connection.request.timeout,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009,value-hit
+dfs.client.socketcache.capacity,16,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009,value-hit
+dfs.edit.log.transfer.bandwidthPerSec,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0016_m_000009,value-hit

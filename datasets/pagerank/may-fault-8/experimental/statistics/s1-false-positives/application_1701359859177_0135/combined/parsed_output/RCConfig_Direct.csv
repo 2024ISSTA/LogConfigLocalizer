@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+mapreduce.job.speculative.retry-after-speculate,15000,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0135_r_000008,property-item-hit	speculative
+fs.trash.checkpoint.interval,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0135_r_000008,value-hit
+dfs.datanode.transfer.socket.recv.buffer.size,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0135_r_000008,value-hit
+mapreduce.reduce.skip.maxgroups,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0135_r_000008,value-hit

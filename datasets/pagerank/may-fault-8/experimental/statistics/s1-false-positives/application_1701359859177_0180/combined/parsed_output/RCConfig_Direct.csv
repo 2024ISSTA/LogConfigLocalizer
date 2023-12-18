@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+dfs.qjournal.http.open.timeout.ms,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0180_r_000008,value-hit
+dfs.namenode.available-space-block-placement-policy.balanced-space-tolerance,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0180_r_000008,value-hit
+mapreduce.shuffle.connection-keep-alive.timeout,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0180_r_000008,value-hit

@@ -1,0 +1,4 @@
+name:mapred.local.dir
+value:<missing>
+relevant log:1-ERROR	security.UserGroupInformation: PriviledgedActionException as:root cause:org.apache.hadoop.mapred.InvalidInputException: Input path does not exist: file:/F:/Workspaces/Test/Hadoop/test
+explanation: The error log indicates that the input path does not exist. This could be due to the missing value for the 'mapred.local.dir' configuration option, which is supposed to specify the local directory for temporary files.

@@ -1,0 +1,25 @@
+name,value,relevant log,explanation
+dfs.balancer.service.retries.on.exception,5,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",property-item-hit	retries
+dfs.balancer.service.retries.on.exception,5,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",property-item-hit	on
+dfs.client.read.striped.threadpool.size,18,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",property-item-hit	read
+dfs.datanode.fileio.profiling.sampling.percentage,0,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",value-hit
+dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock,1000,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",value-hit
+mapreduce.job.cache.limit.max-resources,0,"INFO ipc.Client: Retrying connect to server: 
+localhost/127.0.0.1:8032. 
+Already tried 0 time(s); retry policy is 
+RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)",value-hit

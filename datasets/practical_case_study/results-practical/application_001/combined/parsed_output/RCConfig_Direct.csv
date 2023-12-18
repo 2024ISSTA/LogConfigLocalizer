@@ -1,0 +1,19 @@
+name,value,relevant log,explanation
+mapred.local.dir,/usr/local/hadoop/tmp,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",property-hit
+dfs.datanode.du.reserved.pct,0,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",value-hit
+yarn.nodemanager.delete.thread-count,4,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",value-hit
+yarn.resourcemanager.application.max-tag.length,100,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",value-hit
+hadoop.hdfs.configuration.version,1,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",value-hit
+dfs.namenode.list.cache.pools.num.responses,100,"Error Lost connection to JobTracker [kry1040/72.30.116.100:50020]. Retrying...
+java.io.IOException: No valid local directories in property: mapred.local.dir
+",value-hit

@@ -1,0 +1,20 @@
+,name,value,description
+0,dfs.default.chunk.view.size,cwVrZ,The number of bytes to view for a file on the browser.
+1,dfs.datanode.metrics.logger.period.seconds,600,"This setting controls how frequently the DataNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    DataNodeMetricsLog for the metrics to be logged.
+    DataNode metrics logging is disabled if this value is set to zero or
+    less than zero."
+2,yarn.resourcemanager.rm.container-allocation.expiry-interval-ms,600000,
+3,yarn.nodemanager.node-attributes.provider.fetch-interval-ms,600000,
+4,dfs.journalnode.edit-cache-size.bytes,1048576,"The size, in bytes, of the in-memory cache of edits to keep on the
+    JournalNode. This cache is used to serve edits for tailing via the RPC-based
+    mechanism, and is only enabled when dfs.ha.tail-edits.in-progress is true.
+    Transactions range in size but are around 200 bytes on average, so the
+    default of 1MB can store around 5000 transactions."
+5,fs.s3a.threads.max,64,"The total number of threads available in the filesystem for data
+    uploads *or any other queued filesystem operation*."
+6,yarn.federation.cache-ttl.secs,300,
+7,yarn.sharedcache.store.in-memory.staleness-period-mins,10080,
+8,yarn.resourcemanager.delegation.token.max-lifetime,604800000,
+9,dfs.client.deadnode.detection.probe.suspectnode.interval.ms,300,Interval time in milliseconds for probing suspect node behavior.

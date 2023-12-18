@@ -1,0 +1,14 @@
+name:hadoop.prometheus.endpoint.enabled
+value:true
+relevant log:1-Error java.io.IOException: Problem starting http server
+explanation:The error log indicates a problem starting the http server, which could be related to the configuration of the Hadoop Prometheus endpoint. If this endpoint is enabled but not properly configured, it could cause the server to fail to start.
+
+name:dfs.client.socketcache.expiryMsec
+value:3000
+relevant log:1-Error java.io.IOException: Problem starting http server
+explanation:The error log indicates a problem starting the http server, which could be related to the configuration of the DFS client socket cache expiry. If the expiry time is too short, it could cause the server to fail to start.
+
+name:yarn.nm.liveness-monitor.expiry-interval-ms
+value:600000
+relevant log:1-Error java.io.IOException: Problem starting http server
+explanation:The error log indicates a problem starting the http server, which could be related to the configuration of the YARN NodeManager liveness monitor expiry interval. If this interval is too long, it could cause the server to fail to start.

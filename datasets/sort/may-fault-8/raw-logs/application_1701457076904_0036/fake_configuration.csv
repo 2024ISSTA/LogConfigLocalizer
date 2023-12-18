@@ -1,0 +1,19 @@
+,name,value,description
+0,hadoop.registry.zk.retry.interval.ms,W83lj,
+1,dfs.qjournal.finalize-segment.timeout.ms,120000,"Quorum timeout in milliseconds during finalizing for a specific
+    segment."
+2,mapreduce.job.speculative.retry-after-speculate,15000,"The waiting time(ms) to do next round of speculation
+  if there are tasks speculated in this round."
+3,mapreduce.job.local-fs.single-disk-limit.check.interval-ms,5000,Interval of disk limit check to run in ms.
+4,yarn.nodemanager.localizer.cache.target-size-mb,10240,
+5,dfs.namenode.decommission.interval,30,"Namenode periodicity in seconds to check if
+    decommission or maintenance is complete. Support multiple time unit
+    suffix(case insensitive), as described in dfs.heartbeat.interval.
+    If no time unit is specified then seconds is assumed."
+6,yarn.nodemanager.health-checker.timeout-ms,1200000,
+7,fs.ftp.timeout,0,FTP filesystem's timeout in seconds.
+8,yarn.resourcemanager.container.liveness-monitor.interval-ms,600000,
+9,dfs.namenode.edekcacheloader.interval.ms,1000,"When KeyProvider is configured, the interval time of warming
+    up edek cache on NN starts up / becomes active. All edeks will be loaded
+    from KMS into provider cache. The edek cache loader will try to warm up the
+    cache until succeed or NN leaves active state."

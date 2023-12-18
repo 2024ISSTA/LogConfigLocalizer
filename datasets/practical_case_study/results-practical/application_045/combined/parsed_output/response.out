@@ -1,0 +1,17 @@
+name:mapred.jobtracker.completeuserjobs.maximum
+value:0
+relevant log:2-1-INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+explanation: The NullPointerException could be caused by the configuration option 'mapred.jobtracker.completeuserjobs.maximum' being set to 0. This might be causing the JobTracker to not properly track the jobs, leading to the NullPointerException.
+
+name:yarn.nodemanager.container-metrics.unregister-delay-ms
+value:10000
+relevant log:2-1-INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+explanation: The NullPointerException could be caused by the configuration option 'yarn.nodemanager.container-metrics.unregister-delay-ms' being set to 10000. This might be causing the NodeManager to unregister the container metrics too quickly, leading to the NullPointerException.
+
+name:mapreduce.reduce.shuffle.fetch.retry.interval-ms
+value:1000
+relevant log:2-1-INFO org.apache.hadoop.ipc.Server: IPC Server handler 19 on 57426, call heartbeat(org.apache.hadoop.mapred.TaskTrackerStatus@96136c, false, false, true, 9912) from <host:port>: error: java.io.I
+OException: java.lang.NullPointerException
+explanation: The NullPointerException could be caused by the configuration option 'mapreduce.reduce.shuffle.fetch.retry.interval-ms' being set to 1000. This might be causing the fetcher to retry fetching too quickly, leading to the NullPointerException.

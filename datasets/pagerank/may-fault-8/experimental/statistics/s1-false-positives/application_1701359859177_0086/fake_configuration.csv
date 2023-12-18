@@ -1,0 +1,20 @@
+,name,value,description
+0,dfs.content-summary.limit,-0.4030823,"The maximum content summary counts allowed in one locking period. 0 or a negative number
+    means no limit (i.e. no yielding)."
+1,mapreduce.task.timeout,600000,"The number of milliseconds before a task will be
+  terminated if it neither reads an input, writes an output, nor
+  updates its status string.  A value of 0 disables the timeout."
+2,dfs.client.key.provider.cache.expiry,864000000,DFS client security key cache expiration in milliseconds.
+3,ftp.replication,3,Replication factor
+4,file.client-write-packet-size,65536,Packet size for clients to write
+5,yarn.scheduler.maximum-allocation-mb,8192,
+6,yarn.sharedcache.uploader.server.thread-count,50,
+7,dfs.namenode.fs-limits.max-xattrs-per-inode,32,Maximum number of extended attributes per inode.
+8,yarn.timeline-service.leveldb-timeline-store.start-time-read-cache-size,10000,
+9,hadoop.registry.zk.retry.ceiling.ms,60000,"Zookeeper retry limit in milliseconds, during
+      exponential backoff.
+
+      This places a limit even
+      if the retry times and interval limit, combined
+      with the backoff policy, result in a long retry
+      period"

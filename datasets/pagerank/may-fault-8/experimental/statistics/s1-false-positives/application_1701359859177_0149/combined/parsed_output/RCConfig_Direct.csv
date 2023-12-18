@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+yarn.sharedcache.cleaner.resource-sleep-ms,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010,value-hit
+yarn.timeline-service.client.fd-flush-interval-secs,10,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010,value-hit
+dfs.namenode.snapshot.skiplist.max.levels,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0149_m_000010,value-hit

@@ -1,0 +1,14 @@
+name:hadoop.security.authentication
+value:kerberos
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException between IOException and RemoteException, which might be related to the authentication process in Hadoop. The configuration option 'hadoop.security.authentication' is set to 'kerberos', which is a network authentication protocol. If there are issues with this protocol, it could lead to such exceptions.
+
+name:yarn.app.mapreduce.client.max-retries
+value:3
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException, which might be caused by unsuccessful retries to the ResourceManager/HistoryServer. The configuration option 'yarn.app.mapreduce.client.max-retries' is set to '3', which means the client will retry 3 times before throwing an exception. If the retries are not successful, it could lead to such exceptions.
+
+name:dfs.client.socket.send.buffer.size
+value:0
+relevant log:1-Error java.lang.ClassCastException: class java.io.IOException cannot be cast to class org.apache.hadoop.ipc.RemoteException
+explanation:The error log indicates a ClassCastException, which might be related to the socket send buffer size for a write pipeline in DFSClient side. The configuration option 'dfs.client.socket.send.buffer.size' is set to '0', which means no buffer size will be set explicitly. This could potentially affect the TCP connection throughput and lead to such exceptions.

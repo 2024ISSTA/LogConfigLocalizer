@@ -1,0 +1,14 @@
+name:yarn.resourcemanager.connect.max-wait.ms
+value:900000
+relevant log:1-ERROR	ERROR IN CONTACTING RM.java.io.InterruptedIOException: Call interrupted
+explanation:The error log indicates an issue with contacting the Resource Manager (RM). The configuration option 'yarn.resourcemanager.connect.max-wait.ms' is the maximum time to wait for a connection to the RM. The current value might be too high, causing timeouts and the reported error.
+
+name:ipc.ping.interval
+value:60000
+relevant log:1-ERROR	ERROR IN CONTACTING RM.java.io.InterruptedIOException: Call interrupted
+explanation:The error log shows a problem with the inter-process communication (IPC). The configuration option 'ipc.ping.interval' is the timeout on waiting for a response from the server. The current value might be too high, leading to the interruption error.
+
+name:hadoop.security.group.mapping.ldap.connection.timeout.ms
+value:60000
+relevant log:1-ERROR	ERROR IN CONTACTING RM.java.io.InterruptedIOException: Call interrupted
+explanation:The error log suggests a connection issue. The configuration option 'hadoop.security.group.mapping.ldap.connection.timeout.ms' is the connection timeout for LDAP operations. The current value might be too high, causing the connection to the RM to be interrupted.

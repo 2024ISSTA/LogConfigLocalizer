@@ -1,0 +1,1 @@
+dfs.namenode.file.close.num-committed-allowed	0	INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000	30

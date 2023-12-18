@@ -1,0 +1,17 @@
+name:mapreduce.reduce.shuffle.input.buffer.percent
+value:0.7
+relevant log:1-Error: java.lang.OutOfMemoryError: Java heap space at  
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1703) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1563) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333
+explanation: The error log indicates a Java heap space OutOfMemoryError during the shuffle process in a ReduceTask. The configuration option 'mapreduce.reduce.shuffle.input.buffer.percent' is relevant as it determines the percentage of the maximum heap size (-Xmx setting) that will be allocated for storing map outputs during the shuffle. The current value is set to 0.7, which might be too high and causing the OutOfMemoryError. Reducing this value could potentially solve the issue.
+
+name:yarn.app.mapreduce.am.job.task.listener.thread-count
+value:30
+relevant log:1-Error: java.lang.OutOfMemoryError: Java heap space at  
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.shuffleInMemory(ReduceTask.java:1703) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.getMapOutput(ReduceTask.java:1563) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.copyOutput(ReduceTask.java:1401) at
+org.apache.hadoop.mapred.ReduceTask$ReduceCopier$MapOutputCopier.run(ReduceTask.java:1333
+explanation: The configuration option 'yarn.app.mapreduce.am.job.task.listener.thread-count' is also relevant to the error log. This option determines the number of threads used to handle RPC calls in the MR AppMaster from remote tasks. If the value is set too high, it could potentially lead to high memory usage and cause OutOfMemoryError. Reducing the number of threads might help to alleviate the memory pressure.

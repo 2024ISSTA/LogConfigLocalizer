@@ -1,0 +1,14 @@
+name:hadoop.registry.zk.retry.times
+value:<missing>
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0200_r_000007
+explanation:The configuration for Zookeeper connection retry count is missing. This could potentially cause issues with task speculation if the system is unable to establish a connection with Zookeeper.
+
+name:dfs.client.write.max-packets-in-flight
+value:80
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0200_r_000007
+explanation:The maximum number of DFSPackets allowed in flight is set to 80. If the number of packets in flight exceeds this limit, it could potentially cause issues with task speculation.
+
+name:yarn.nodemanager.runtime.linux.runc.hdfs-manifest-to-resources-plugin.stat-cache-timeout-interval-secs
+value:360
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0200_r_000007
+explanation:The cache timeout interval for the HDFS manifest to resources plugin is set to 360 seconds. If the cache is not refreshed within this interval, it could potentially cause issues with task speculation.

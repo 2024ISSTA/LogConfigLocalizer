@@ -1,0 +1,14 @@
+name:io.file.buffer.size
+value:2112001717
+relevant log:1-Error java.lang.OutOfMemoryError: Java heap space
+explanation: The error indicates that the Java heap space is out of memory. The configuration option 'io.file.buffer.size' is set to a very high value, which could be causing the system to run out of memory. Reducing this value could potentially solve the issue.
+
+name:yarn.resourcemanager.nodemanager-graceful-decommission-timeout-secs
+value:3600
+relevant log:<missing>
+explanation: The description for this configuration option is missing, which could potentially cause issues if not properly set. However, there is no direct evidence in the log pointing to this configuration option as a cause of the error.
+
+name:dfs.client.read.shortcircuit.buffer.size
+value:1048576
+relevant log:1-Error java.lang.OutOfMemoryError: Java heap space
+explanation: This configuration option sets the buffer size for short-circuit local reads. If this value is set too high, it could potentially cause the system to run out of memory. However, the current value seems to be reasonable and there is no direct evidence in the log pointing to this configuration option as a cause of the error.

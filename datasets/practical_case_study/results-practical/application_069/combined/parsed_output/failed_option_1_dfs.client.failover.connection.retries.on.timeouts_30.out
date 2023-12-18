@@ -1,0 +1,2 @@
+dfs.client.failover.connection.retries.on.timeouts	0	Error Caused by: java.lang.NullPointerException
+    	30

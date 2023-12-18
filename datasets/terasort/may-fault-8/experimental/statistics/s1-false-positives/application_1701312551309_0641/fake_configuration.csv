@@ -1,0 +1,23 @@
+,name,value,description
+0,yarn.resourcemanager.activities-manager.scheduler-activities.ttl-ms,438009829,<missing>
+1,mapreduce.shuffle.listen.queue.size,128,The length of the shuffle server listen queue.
+2,ipc.ping.interval,60000,"Timeout on waiting response from server, in milliseconds.
+  The client will send ping when the interval is passed without receiving bytes,
+  if ipc.client.ping is set to true."
+3,yarn.resourcemanager.connect.max-wait.ms,900000,
+4,dfs.balancer.getBlocks.size,2147483648,"Total size in bytes of Datanode blocks to get when fetching a source's
+    block list."
+5,yarn.resourcemanager.system-metrics-publisher.timeline-server-v1.interval-seconds,60,
+6,hadoop.security.group.mapping.ldap.connection.timeout.ms,60000,"This property is the connection timeout (in milliseconds) for LDAP
+    operations. If the LDAP provider doesn't establish a connection within the
+    specified period, it will abort the connect attempt. Non-positive value
+    means no LDAP connection timeout is specified in which case it waits for the
+    connection to establish until the underlying network times out."
+7,dfs.bytes-per-checksum,512,"The number of bytes per checksum.  Must not be larger than
+  dfs.stream-buffer-size"
+8,dfs.client.key.provider.cache.expiry,864000000,DFS client security key cache expiration in milliseconds.
+9,dfs.namenode.metrics.logger.period.seconds,600,"This setting controls how frequently the NameNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    NameNodeMetricsLog for the metrics to be logged.
+    NameNode metrics logging is disabled if this value is set to zero or
+    less than zero."

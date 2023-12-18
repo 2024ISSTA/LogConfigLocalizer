@@ -1,0 +1,3 @@
+anomaly_degree,content
+0.2,"INFO       org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000"
+0.2,"INFO       org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null"

@@ -1,0 +1,6 @@
+0,1
+dd35c99e,"Started ServerConnector@78fe204a{HTTP/<*>.<*>, (http/<*>.<*>)}{<*>}"
+b99d3386,DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_<*>_<*>_r_<*>
+b12e04de,Scheduling a redundant attempt for task task_<*>_<*>_r_<*>
+cbb6bed6,Issuing kill to other attempt attempt_<*>_<*>_r_<*>_<*>
+87527d59,"Stopped ServerConnector@78fe204a{HTTP/<*>.<*>, (http/<*>.<*>)}{<*>}"

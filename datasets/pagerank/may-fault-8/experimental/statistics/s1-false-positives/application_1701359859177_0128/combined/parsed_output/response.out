@@ -1,0 +1,14 @@
+name:ha.failover-controller.graceful-fence.connection.retries
+value:<missing>
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0128_r_000009
+explanation: The configuration for FC connection retries for graceful fencing is missing. This could cause issues with task speculation and failover, as indicated in the log.
+
+name:yarn.resourcemanager.proxy.connection.timeout
+value:60000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0128_r_000009
+explanation: The description for this configuration is missing, but it's related to the ResourceManager's proxy connection timeout. This could potentially impact the task speculation process.
+
+name:yarn.resourcemanager.placement-constraints.retry-attempts
+value:3
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0128_r_000009
+explanation: This configuration is related to the number of retry attempts for placement constraints in ResourceManager. If the number is too low, it could cause issues with task placement and speculation.

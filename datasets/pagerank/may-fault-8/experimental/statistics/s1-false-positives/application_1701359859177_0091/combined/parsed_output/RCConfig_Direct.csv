@@ -1,0 +1,4 @@
+name,value,relevant log,explanation
+yarn.client.max-cached-nodemanagers-proxies,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0091_r_000008,value-hit
+dfs.blockreport.incremental.intervalMsec,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0091_r_000008,value-hit
+fs.ftp.timeout,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0091_r_000008,value-hit

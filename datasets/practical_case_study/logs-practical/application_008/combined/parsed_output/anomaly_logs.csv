@@ -1,0 +1,17 @@
+anomaly_degree,content
+0.2,"Error java.lang.NegativeArraySizeException: -4096
+        at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:93)
+        at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:68)
+        at org.apache.hadoop.io.IOUtils.copyBytes(IOUtils.java:129)
+        at org.apache.hadoop.fs.shell.Display$Cat.printToStdout(Display.java:101)
+        at org.apache.hadoop.fs.shell.Display$Cat.processPath(Display.java:96)
+        at org.apache.hadoop.fs.shell.Command.processPaths(Command.java:331)
+        at org.apache.hadoop.fs.shell.Command.processPathArgument(Command.java:303)
+        at org.apache.hadoop.fs.shell.Command.processArgument(Command.java:285)
+        at org.apache.hadoop.fs.shell.Command.processArguments(Command.java:269)
+        at org.apache.hadoop.fs.shell.FsCommand.processRawArguments(FsCommand.java:120)
+        at org.apache.hadoop.fs.shell.Command.run(Command.java:176)
+        at org.apache.hadoop.fs.FsShell.run(FsShell.java:328)
+        at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:76)
+        at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:90)
+        at org.apache.hadoop.fs.FsShell.main(FsShell.java:391)"

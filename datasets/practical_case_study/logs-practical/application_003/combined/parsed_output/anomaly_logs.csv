@@ -1,0 +1,5 @@
+anomaly_degree,content
+0.2,"Error java.lang.AssertionError: Duplicate commit successful: wrong behavior for version 1.
+    at org.junit.Assert.fail(Assert.java:89)
+    at org.apache.hadoop.mapred.TestFileOutputCommitter.testCommitterWithDuplicatedCommitInternal(TestFileOutputCommitter.java:295)
+    at org.apache.hadoop.mapred.TestFileOutputCommitter.testCommitterWithDuplicatedCommitV1(TestFileOutputCommitter.java:269)"

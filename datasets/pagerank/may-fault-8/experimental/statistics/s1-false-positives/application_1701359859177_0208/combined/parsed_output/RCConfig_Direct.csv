@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+mapreduce.task.combine.progress.records,-531162184,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0208_m_000010,property-item-hit	task
+dfs.ha.tail-edits.period.backoff-max,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0208_m_000010,value-hit
+yarn.resourcemanager.delegation-token-renewer.thread-retry-max-attempts,10,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0208_m_000010,value-hit
+dfs.client.refresh.read-block-locations.threads,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0208_m_000010,value-hit

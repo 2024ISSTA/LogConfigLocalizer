@@ -1,0 +1,14 @@
+name:mapred.compress.map.output
+value:true
+relevant log:2-1-INFO org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000INFO org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null
+explanation:The log indicates that the intermediate.1 used codec is null, which might be caused by the mapred.compress.map.output configuration being set to true. This configuration is supposed to compress the map output, but if the codec is not specified, it could lead to errors.
+
+name:mapreduce.task.userlog.limit.kb
+value:0
+relevant log:2-1-INFO org.apache.hadoop.mapred.Merger: Merging 30 intermediate segments out of a total of 3000INFO org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null
+explanation:The mapreduce.task.userlog.limit.kb configuration is set to 0, which disables the cap on the maximum size of user-logs of each task in KB. This could potentially lead to excessive logging and performance issues.
+
+name:yarn.nodemanager.aux-services.manifest.reload-ms
+value:0
+relevant log:<missing>
+explanation:The yarn.nodemanager.aux-services.manifest.reload-ms configuration is set to 0 and the description is missing. This could potentially cause issues as it might be related to the reloading of auxiliary services in the Yarn NodeManager.

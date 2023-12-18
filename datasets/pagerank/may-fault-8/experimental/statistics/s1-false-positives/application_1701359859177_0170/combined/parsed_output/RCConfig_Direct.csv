@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+yarn.sharedcache.cleaner.resource-sleep-ms,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0170_r_000007,value-hit
+dfs.client.max.block.acquire.failures,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0170_r_000007,value-hit
+dfs.datanode.max.slowdisks.to.exclude,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0170_r_000007,value-hit
+dfs.datanode.directoryscan.threads,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0170_r_000007,value-hit

@@ -1,0 +1,6 @@
+name,value,relevant log,explanation
+yarn.router.pipeline.cache-max-size,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009,value-hit
+yarn.resourcemanager.placement-constraints.scheduler.pool-size,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009,value-hit
+mapreduce.task.io.sort.factor,10,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009,property-item-hit	task
+dfs.namenode.ec.policies.max.cellsize,4194304,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009,property-item-hit	ec
+dfs.namenode.snapshot.skiplist.max.levels,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0069_r_000009,value-hit

@@ -1,0 +1,1 @@
+mapred.compress.map.output	true	INFO       org.apache.hadoop.mapred.Merger: intermediate.1 used codec: null	30

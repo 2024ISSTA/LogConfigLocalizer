@@ -1,0 +1,14 @@
+name:mapred.userlog.retain.hours
+value:1
+relevant log:1-WARN org.apache.hadoop.mapred.TaskRunner: attempt_200903212204_0005_r_000001_1 Child Error
+explanation: The error in the log is related to a task runner in Hadoop. The configuration option 'mapred.userlog.retain.hours' is relevant as it determines how long the user logs are retained. The error might be due to the short retention period of the logs.
+
+name:yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs
+value:86400
+relevant log:1-WARN org.apache.hadoop.mapred.TaskRunner: attempt_200903212204_0005_r_000001_1 Child Error
+explanation: The error in the log is related to a task runner in Hadoop. The configuration option 'yarn.resourcemanager.container-tokens.master-key-rolling-interval-secs' is relevant as it determines the interval for the master key rolling for container tokens in the resource manager. The error might be due to the long interval set for the master key rolling.
+
+name:yarn.client.nodemanager-client-async.thread-pool-max-size
+value:500
+relevant log:1-WARN org.apache.hadoop.mapred.TaskRunner: attempt_200903212204_0005_r_000001_1 Child Error
+explanation: The error in the log is related to a task runner in Hadoop. The configuration option 'yarn.client.nodemanager-client-async.thread-pool-max-size' is relevant as it determines the maximum size of the thread pool for the node manager client. The error might be due to the large size of the thread pool.

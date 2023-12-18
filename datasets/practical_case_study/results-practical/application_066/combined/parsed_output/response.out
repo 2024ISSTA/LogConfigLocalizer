@@ -1,0 +1,14 @@
+name:ipc.client.connection.idle-scan-interval.ms
+value:-1
+relevant log:1-Error java.lang.AssertionError: Leaked 142 file descriptors
+explanation:This configuration is related to the IPC (Inter-Process Communication) client. The error log indicates a file descriptor leak, which could be caused by idle IPC connections not being scanned and closed properly due to the negative value set for the idle scan interval.
+
+name:dfs.datanode.max.disks.to.report
+value:5
+relevant log:1-Error java.lang.AssertionError: Leaked 142 file descriptors
+explanation:The error log indicates a file descriptor leak, which could be related to the number of disks reported per operation. If the number of disks exceeds the value set in this configuration, it could lead to file descriptor leaks.
+
+name:dfs.client.mmap.retry.timeout.ms
+value:300000
+relevant log:1-Error java.lang.AssertionError: Leaked 142 file descriptors
+explanation:The error log indicates a file descriptor leak, which could be related to failed mmap operations. If the mmap operation fails and the system retries after a timeout, it could lead to file descriptor leaks. The value set for the retry timeout could be too high, causing the system to hold onto file descriptors for too long.

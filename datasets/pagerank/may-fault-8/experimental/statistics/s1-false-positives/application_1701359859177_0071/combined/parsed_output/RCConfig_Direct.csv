@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+dfs.edit.log.transfer.bandwidthPerSec,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,value-hit
+dfs.heartbeat.interval,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,value-hit
+dfs.client.block.write.retries,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,value-hit
+yarn.app.mapreduce.am.resource.cpu-vcores,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0072_r_000008,value-hit

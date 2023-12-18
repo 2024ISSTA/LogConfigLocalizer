@@ -1,0 +1,14 @@
+name:mapreduce.task.timeout
+value:600000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0086_r_000009
+explanation: The log indicates that a task is being speculated, which could be due to the task not updating its status or not reading/writing an input/output. This could be related to the 'mapreduce.task.timeout' configuration, which sets the time limit for a task to perform these actions before it is terminated.
+
+name:yarn.scheduler.maximum-allocation-mb
+value:8192
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0086_r_000009
+explanation: The speculated task could be related to resource allocation issues. The 'yarn.scheduler.maximum-allocation-mb' configuration sets the maximum memory allocation for all applications in the system, and if this limit is too low, it could cause tasks to be speculated.
+
+name:dfs.client.key.provider.cache.expiry
+value:864000000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0086_r_000009
+explanation: The speculated task could be related to security key cache expiration. The 'dfs.client.key.provider.cache.expiry' configuration sets the expiration time for the DFS client security key cache. If the cache expires too quickly, it could cause tasks to be speculated.

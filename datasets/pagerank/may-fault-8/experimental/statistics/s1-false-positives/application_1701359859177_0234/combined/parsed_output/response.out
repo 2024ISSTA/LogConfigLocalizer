@@ -1,0 +1,14 @@
+name:hadoop.security.group.mapping.ldap.num.attempts
+value:0.11136216
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009
+explanation:The value of this configuration is not an integer, which is not valid for the number of attempts. This might cause the LDAP operations to fail.
+
+name:ipc.client.rpc-timeout.ms
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009
+explanation:The value of this configuration is 0, which means the client will not wait for the server's response. This might cause the RPC operations to fail.
+
+name:fs.trash.interval
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009
+explanation:The value of this configuration is 0, which means the trash feature is disabled. This might cause the file deletion operations to fail.

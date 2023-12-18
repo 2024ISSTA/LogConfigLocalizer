@@ -1,0 +1,21 @@
+,name,value,description
+0,mapreduce.job.split.metainfo.maxsize,0,"The maximum permissible size of the split metainfo file.
+  The MapReduce ApplicationMaster won't attempt to read submitted split metainfo
+  files bigger than this configured value.
+  No limits if set to -1."
+1,ipc.client.connect.max.retries.on.timeouts,45,"Indicates the number of retries a client will make on socket timeout
+               to establish a server connection."
+2,dfs.image.parallel.inode.threshold,1000000,"If the image contains less inodes than this setting, then
+        do not write sub-sections and hence disable parallel loading.
+        This is because small images load very quickly in serial and
+        parallel loading is not needed."
+3,yarn.timeline-service.writer.flush-interval-seconds,60,
+4,ipc.client.connect.max.retries,10,"Indicates the number of retries a client will make to establish
+               a server connection."
+5,dfs.datanode.min.outlier.detection.disks,5,Minimum number of disks to run outlier detection.
+6,mapreduce.task.combine.progress.records,10000,"The number of records to process during combine output collection
+   before sending a progress notification."
+7,dfs.qjournal.new-epoch.timeout.ms,120000,"Timeout in milliseconds when getting an epoch number for write
+    access to JournalNodes."
+8,dfs.namenode.blockreport.queue.size,1024,The queue size of BlockReportProcessingThread in BlockManager.
+9,yarn.resourcemanager.application-timeouts.monitor.interval-ms,3000,

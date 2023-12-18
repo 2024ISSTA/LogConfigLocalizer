@@ -1,0 +1,3 @@
+mapreduce.task.io.sort.mb	10	WARN org.apache.hadoop.mapred.Child: Error running child
+java.lang.ArrayIndexOutOfBoundsException: 24
+	30

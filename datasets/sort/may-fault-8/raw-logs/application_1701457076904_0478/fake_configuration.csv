@@ -1,0 +1,20 @@
+,name,value,description
+0,mapreduce.job.cache.limit.max-resources-mb,,"The maximum size (in MB) a map reduce job is allowed to submit
+    for localization via files, libjars, archives, and jobjar command line
+    arguments and through the distributed cache. If set to 0 the limit is
+    ignored."
+1,dfs.datanode.peer.metrics.min.outlier.detection.samples,1000,"Minimum number of packet send samples which are required to qualify for outlier detection.
+      If the number of samples is below this then outlier detection is skipped."
+2,yarn.resourcemanager.delegation-token-renewer.thread-retry-max-attempts,10,
+3,dfs.client.refresh.read-block-locations.ms,0,Refreshing LocatedBlocks period. A value of 0 disables the feature.
+4,yarn.resourcemanager.activities-manager.app-activities.max-queue-length,100,
+5,dfs.namenode.checkpoint.txns,1000000,"The Secondary NameNode or CheckpointNode will create a checkpoint
+  of the namespace every 'dfs.namenode.checkpoint.txns' transactions, regardless
+  of whether 'dfs.namenode.checkpoint.period' has expired."
+6,yarn.resourcemanager.activities-manager.scheduler-activities.ttl-ms,600000,
+7,hadoop.security.groups.cache.background.reload.threads,3,"Only relevant if hadoop.security.groups.cache.background.reload is true.
+    Controls the number of concurrent background user->group cache entry
+    refreshes. Pending refresh requests beyond this value are queued and
+    processed when a thread is free."
+8,dfs.client-write-packet-size,65536,Packet size for clients to write
+9,yarn.resourcemanager.system-metrics-publisher.timeline-server-v1.interval-seconds,60,

@@ -1,0 +1,23 @@
+,name,value,description
+0,hadoop.security.group.mapping.ldap.search.group.hierarchy.levels,771915154,"The number of levels to go up the group hierarchy when determining
+    which groups a user is part of. 0 Will represent checking just the
+    group that the user belongs to.  Each additional level will raise the
+    time it takes to execute a query by at most
+    hadoop.security.group.mapping.ldap.directory.search.timeout.
+    The default will usually be appropriate for all LDAP systems."
+1,yarn.nodemanager.resource-monitor.interval-ms,3000,
+2,yarn.nodemanager.amrmproxy.client.thread-count,25,
+3,dfs.datanode.max.disks.to.report,5,"Number of disks to include in JSON report per operation. We will return
+    disks with the highest latency."
+4,fs.trash.checkpoint.interval,0,"Number of minutes between trash checkpoints.
+  Should be smaller or equal to fs.trash.interval. If zero,
+  the value is set to the value of fs.trash.interval.
+  Every time the checkpointer runs it creates a new checkpoint
+  out of current and removes checkpoints created more than
+  fs.trash.interval minutes ago."
+5,dfs.namenode.decommission.backoff.monitor.pending.blocks.per.lock,1000,"When loading blocks into the replication queue, release the namenode write
+    lock after the defined number of blocks have been processed."
+6,mapreduce.jobhistory.client.thread-count,10,The number of threads to handle client API requests
+7,yarn.nodemanager.health-checker.interval-ms,600000,
+8,yarn.sharedcache.nm.uploader.thread-count,20,
+9,yarn.nodemanager.log-aggregation.num-log-files-per-app,30,

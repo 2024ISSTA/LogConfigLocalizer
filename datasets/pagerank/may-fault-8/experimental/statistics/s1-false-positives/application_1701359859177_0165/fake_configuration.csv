@@ -1,0 +1,17 @@
+,name,value,description
+0,io.bytes.per.checksum,,"The number of bytes per checksum.  Must not be larger than
+  io.file.buffer.size."
+1,dfs.client.failover.connection.retries.on.timeouts,0,"Expert only. The number of retry attempts a failover IPC client
+    will make on socket timeout when establishing a server connection."
+2,yarn.timeline-service.hbase.coprocessor.app-final-value-retention-milliseconds,259200000,
+3,hadoop.fuse.timer.period,5,"The number of seconds between cache expiry checks in fuse_dfs. Lower values
+    will result in fuse_dfs noticing changes to Kerberos ticket caches more
+    quickly."
+4,yarn.timeline-service.entity-group-fs-store.scan-interval-seconds,60,
+5,yarn.resourcemanager.submission-preprocessor.file-refresh-interval-ms,60000,
+6,yarn.app.mapreduce.am.resource.cpu-vcores,1,The number of virtual CPU cores the MR AppMaster needs.
+7,hadoop.security.kms.client.encrypted.key.cache.size,500,Size of the EncryptedKeyVersion cache Queue for each key
+8,dfs.storage.policy.satisfier.retry.max.attempts,3,"Max retry to satisfy the block storage policy. After this retry block will be removed
+    from the movement needed queue."
+9,dfs.datanode.max.transfer.threads,4096,"Specifies the maximum number of threads to use for transferring data
+        in and out of the DN."

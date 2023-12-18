@@ -1,0 +1,16 @@
+,name,value,description
+0,dfs.block.misreplication.processing.limit,,Maximum number of blocks to process for initializing replication queues.
+1,yarn.app.mapreduce.am.container.log.limit.kb,0,"The maximum size of the MRAppMaster attempt container logs in KB.
+    0 disables the cap."
+2,tfile.fs.input.buffer.size,262144,Buffer size used for FSDataInputStream in bytes.
+3,dfs.qjournal.queued-edits.limit.mb,10,Queue size in MB for quorum journal edits.
+4,ipc.[port_number].decay-scheduler.metrics.top.user.count,10,"The number of top (i.e., heaviest) users to emit metric
+    information about. This property applies to DecayRpcScheduler."
+5,yarn.nodemanager.runtime.linux.docker.userremapping-uid-threshold,1,
+6,yarn.timeline-service.app-aggregation-interval-secs,15,
+7,dfs.namenode.blocks.per.postponedblocks.rescan,10000,"Number of blocks to rescan for each iteration of
+    postponedMisreplicatedBlocks."
+8,mapreduce.input.fileinputformat.split.minsize,0,"The minimum size chunk that map input should be split
+  into.  Note that some file formats may have minimum split sizes that
+  take priority over this setting."
+9,yarn.timeline-service.timeline-client.number-of-async-entities-to-merge,10,

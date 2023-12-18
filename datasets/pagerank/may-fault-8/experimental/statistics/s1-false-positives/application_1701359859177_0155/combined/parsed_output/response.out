@@ -1,0 +1,14 @@
+name:dfs.client.failover.sleep.max.millis
+value:15000
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008
+explanation:The log indicates a speculative attempt, which might be due to failover attempts. The configuration 'dfs.client.failover.sleep.max.millis' controls the maximum time to wait between failovers. If the value is too high, it might cause unnecessary delays and speculative attempts.
+
+name:yarn.client.failover-retries
+value:0
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008
+explanation:The log indicates a speculative attempt, which might be due to failover attempts. The configuration 'yarn.client.failover-retries' controls the number of failover attempts. If the value is too low, it might cause unnecessary speculative attempts.
+
+name:dfs.datanode.du.reserved.pct
+value:0.97344786
+relevant log:1-INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008
+explanation:The log indicates a speculative attempt, which might be due to insufficient resources. The configuration 'dfs.datanode.du.reserved.pct' controls the reserved space in percentage. If the value is too high, it might cause resource shortage and speculative attempts.

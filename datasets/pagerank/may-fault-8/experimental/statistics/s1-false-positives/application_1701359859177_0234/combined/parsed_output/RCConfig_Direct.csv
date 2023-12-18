@@ -1,0 +1,6 @@
+name,value,relevant log,explanation
+ipc.client.rpc-timeout.ms,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009,value-hit
+dfs.datanode.ec.reconstruction.stripedread.timeout.millis,5000,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009,property-item-hit	ec
+fs.trash.interval,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009,value-hit
+dfs.namenode.max.slowpeer.collect.nodes,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009,value-hit
+mapreduce.task.io.sort.mb,100,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0235_r_000009,property-item-hit	task

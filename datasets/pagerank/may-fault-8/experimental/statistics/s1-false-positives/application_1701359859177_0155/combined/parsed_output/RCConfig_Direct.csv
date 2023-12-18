@@ -1,0 +1,6 @@
+name,value,relevant log,explanation
+dfs.balancer.service.retries.on.exception,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008,value-hit
+hadoop.security.group.mapping.ldap.num.attempts,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008,value-hit
+yarn.client.failover-retries,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008,value-hit
+mapreduce.job.max.split.locations,15,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008,value-hit
+mapreduce.jobhistory.loadedjobs.cache.size,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0155_r_000008,value-hit

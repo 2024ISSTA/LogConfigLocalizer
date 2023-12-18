@@ -1,0 +1,3 @@
+name,value,relevant log,explanation
+dfs.namenode.get-blocks.max-qps,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0154_m_000009,value-hit
+dfs.balancer.service.retries.on.exception,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0154_m_000009,value-hit

@@ -1,0 +1,6 @@
+name,value,relevant log,explanation
+dfs.namenode.max.slowpeer.collect.nodes,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0012_r_000009,value-hit
+fs.trash.interval,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0012_r_000009,value-hit
+dfs.blockreport.incremental.intervalMsec,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0012_r_000009,value-hit
+yarn.router.interceptor.user.threadpool-size,5,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0012_r_000009,value-hit
+yarn.resourcemanager.fs.state-store.num-retries,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0012_r_000009,value-hit

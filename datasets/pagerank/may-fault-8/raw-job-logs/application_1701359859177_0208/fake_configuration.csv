@@ -1,0 +1,20 @@
+,name,value,description
+0,mapreduce.task.combine.progress.records,-531162184,"The number of records to process during combine output collection
+   before sending a progress notification."
+1,yarn.nodemanager.node-attributes.provider.fetch-interval-ms,600000,
+2,yarn.resourcemanager.application.max-tags,10,
+3,dfs.namenode.resource.checked.volumes.minimum,1,The minimum number of redundant NameNode storage volumes required.
+4,dfs.disk.balancer.max.disk.throughputInMBperSec,10,"Maximum disk bandwidth used by diskbalancer
+      during read from a source disk. The unit is MB/sec."
+5,dfs.namenode.metrics.logger.period.seconds,600,"This setting controls how frequently the NameNode logs its metrics. The
+    logging configuration must also define one or more appenders for
+    NameNodeMetricsLog for the metrics to be logged.
+    NameNode metrics logging is disabled if this value is set to zero or
+    less than zero."
+6,yarn.nodemanager.resource.memory.cgroups.swappiness,0,
+7,yarn.timeline-service.writer.async.queue.capacity,100,
+8,dfs.http.client.failover.sleep.max.millis,15000,"Specify the upper bound of sleep time in milliseconds between
+    retries or failovers for WebHDFS client."
+9,dfs.namenode.snapshot.skiplist.max.levels,0,"Maximum no of the skip levels to be maintained in the skip list for
+    storing directory snapshot diffs. By default, it is set to 0 and a linear
+    list will be used to store the directory snapshot diffs."

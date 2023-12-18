@@ -1,0 +1,5 @@
+name,value,relevant log,explanation
+yarn.resourcemanager.placement-constraints.algorithm.pool-size,1,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008,value-hit
+mapreduce.job.cache.limit.max-resources-mb,0,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008,value-hit
+dfs.namenode.blockreport.max.lock.hold.time,4,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008,value-hit
+mapreduce.jobhistory.move.thread-count,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0204_r_000008,value-hit

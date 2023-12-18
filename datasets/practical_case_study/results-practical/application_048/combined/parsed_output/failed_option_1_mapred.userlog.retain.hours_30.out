@@ -1,0 +1,2 @@
+mapred.userlog.retain.hours	1	 WARN org.apache.hadoop.mapred.TaskRunner:
+attempt_200903212204_0005_r_000001_1 Child Error	30

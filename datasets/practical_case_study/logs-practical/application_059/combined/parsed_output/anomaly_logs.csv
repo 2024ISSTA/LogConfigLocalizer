@@ -1,0 +1,24 @@
+anomaly_degree,content
+0.2,"WARN org.apache.hadoop.mapred.Child: Error running child
+java.lang.ArrayIndexOutOfBoundsException: 24
+at org.apache.avro.io.parsing.Symbol$Alternative.getSymbol(Symbol.java:364)
+at org.apache.avro.io.ResolvingDecoder.doAction(ResolvingDecoder.java:229)
+at org.apache.avro.io.parsing.Parser.advance(Parser.java:88)
+at org.apache.avro.io.ResolvingDecoder.readIndex(ResolvingDecoder.java:206)
+at org.apache.avro.generic.GenericDatumReader.read(GenericDatumReader.java:148)
+at org.apache.avro.generic.GenericDatumReader.readRecord(GenericDatumReader.java:173)
+at org.apache.avro.generic.GenericDatumReader.read(GenericDatumReader.java:144)
+at org.apache.avro.generic.GenericDatumReader.read(GenericDatumReader.java:135)
+at org.apache.crunch.types.avro.SafeAvroSerialization$AvroWrapperDeserializer.deserialize(SafeAvroSerialization.java:86)
+at org.apache.crunch.types.avro.SafeAvroSerialization$AvroWrapperDeserializer.deserialize(SafeAvroSerialization.java:70)
+at org.apache.hadoop.mapreduce.task.ReduceContextImpl.nextKeyValue(ReduceContextImpl.java:135)
+at org.apache.hadoop.mapreduce.task.ReduceContextImpl.nextKey(ReduceContextImpl.java:114)
+at org.apache.hadoop.mapreduce.lib.reduce.WrappedReducer$Context.nextKey(WrappedReducer.java:291)
+at org.apache.hadoop.mapreduce.Reducer.run(Reducer.java:163)
+at org.apache.hadoop.mapred.ReduceTask.runNewReducer(ReduceTask.java:610)
+at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:444)
+at org.apache.hadoop.mapred.Child$4.run(Child.java:268)
+at java.security.AccessController.doPrivileged(Native Method)
+at javax.security.auth.Subject.doAs(Subject.java:396)
+at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1408)
+at org.apache.hadoop.mapred.Child.main(Child.java:262)"

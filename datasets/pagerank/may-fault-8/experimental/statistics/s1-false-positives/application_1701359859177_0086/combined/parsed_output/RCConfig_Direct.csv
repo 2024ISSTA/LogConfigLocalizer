@@ -1,0 +1,3 @@
+name,value,relevant log,explanation
+mapreduce.task.timeout,600000,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0086_r_000009,property-item-hit	task
+ftp.replication,3,INFO	DefaultSpeculator.addSpeculativeAttempt -- we are speculating task_1701359859177_0086_r_000009,value-hit

@@ -1,0 +1,23 @@
+,name,value,description
+0,ftp.blocksize,,Block size
+1,mapreduce.job.cache.limit.max-single-resource-mb,0,"The maximum size (in MB) of a single resource a map reduce job
+    is allow to submit for localization via files, libjars, archives, and
+    jobjar command line arguments and through the distributed cache. If set to
+    0 the limit is ignored."
+2,nfs.rtmax,1048576,"This is the maximum size in bytes of a READ request
+    supported by the NFS gateway. If you change this, make sure you
+    also update the nfs mount's rsize(add rsize= # of bytes to the 
+    mount directive)."
+3,hadoop.security.groups.cache.background.reload.threads,3,"Only relevant if hadoop.security.groups.cache.background.reload is true.
+    Controls the number of concurrent background user->group cache entry
+    refreshes. Pending refresh requests beyond this value are queued and
+    processed when a thread is free."
+4,yarn.timeline-service.timeline-client.number-of-async-entities-to-merge,10,
+5,yarn.scheduler.maximum-allocation-vcores,4,
+6,ha.failover-controller.graceful-fence.connection.retries,1,FC connection retries for graceful fencing
+7,yarn.resourcemanager.am-rm-tokens.master-key-rolling-interval-secs,86400,
+8,dfs.http.client.retry.max.attempts,10,"Specify the max number of retry attempts for WebHDFS client,
+    if the difference between retried attempts and failovered attempts is
+    larger than the max number of retry attempts, there will be no more
+    retries."
+9,yarn.resourcemanager.application.max-tag.length,100,

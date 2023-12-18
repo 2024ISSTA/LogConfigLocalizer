@@ -1,0 +1,14 @@
+name:ipc.server.handler.queue.size
+value:0
+relevant log:1-Error Caused by: java.lang.NullPointerException
+explanation: The ipc.server.handler.queue.size is set to 0, which means there is no space for incoming requests to be queued. This could cause NullPointerException if a request is received and there is no space to queue it.
+
+name:dfs.client.hedged.read.threadpool.size
+value:0
+relevant log:1-Error Caused by: java.lang.NullPointerException
+explanation: The dfs.client.hedged.read.threadpool.size is set to 0, which means there are no threads available for 'hedged' reads. This could cause NullPointerException if a 'hedged' read is requested and there are no threads available to handle it.
+
+name:dfs.client.failover.connection.retries.on.timeouts
+value:0
+relevant log:1-Error Caused by: java.lang.NullPointerException
+explanation: The dfs.client.failover.connection.retries.on.timeouts is set to 0, which means the client will not retry to establish a server connection on socket timeout. This could cause NullPointerException if a socket timeout occurs and the client does not retry to establish the connection.
