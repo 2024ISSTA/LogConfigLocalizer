@@ -39,7 +39,10 @@ This repository is for "Face it Yourselves: An LLM-based Two-Stage Strategy to L
        1. `directory_path="terasort/may-fault-8/raw-logs"`
        2. `python3 /parser/data_recursive.py`
        3. `./evaluation_hadoop_first_stage_only.sh /terasort/may-fault-8/raw-logs /terasort/fault-free/parsed_output`
--   Stage 2: *evaluation_hadoop_second_stage_only.sh*   
+-   Stage 2: *evaluation_hadoop_second_stage_only.sh*
+
+    tips: **Set the API Key inside `failure_diagnoser_with_des_with_direct.py` before using it.**
+    
     ```./evaluation_hadoop_second_stage_only.sh <path/to/may-fault-8/rawlogs/>```
 
       Example: Test Cases of the terasort workload.
