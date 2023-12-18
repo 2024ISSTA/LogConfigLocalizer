@@ -28,10 +28,11 @@ This repository is for "Face it Yourselves: An LLM-based Two-Stage Strategy to L
   - Improved Drain: *Drain.py*
 ## Scripts to Activate LogConfigLocalizer
 -   Stage 1: *evaluation_hadoop_first_stage_only.sh*
-    1. Parsing:
-       Please change the `directory_path` inside the `data_recursive.py` first and then
+    1. Parsing: build `Drain` first, see [README](https://github.com/2024ISSTA/LogConfigLocalizer/blob/main/parser/README.md)
+
+        Please change the `directory_path` inside the `data_recursive.py` first and then
        ```python3 /parser/data_recursive.py```
-    2. Remaining Steps:
+    3. Remaining Steps:
     ```./evaluation_hadoop_first_stage_only.sh <path/to/may-fault-8/rawlogs/> <path/to/fault-free/parsed_output>```
 
        Example: Test Cases of the terasort workload.
