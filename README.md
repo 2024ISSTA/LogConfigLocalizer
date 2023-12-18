@@ -15,7 +15,7 @@ This repository is for "Face it Yourselves: An LLM-based Two-Stage Strategy to L
 **Practical_Case_Study**: 33 selected cases from the preliminary study
   - *logs-practical*: logs offered by end-users
   - *results-practical*: the results of the practical case study
-    - `application_001` and  `application_070` is the selected cases to elaborate.  
+    - `application_001` and  `application_070` are the selected cases to elaborate.  
 ## Code
 **Localizer**
   - Stage 1: *anomaly_idnetifier.py*
